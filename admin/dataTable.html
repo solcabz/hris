@@ -1,0 +1,265 @@
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <title>HRIS Admin Data Table</title>
+       <!-- <link rel="icon" type="image/x-icon" href="img/hricon.ico"> -->
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="icon" href="../image/hris.png" type="image/png">
+       <!----======== CSS ======== -->
+       <link rel="stylesheet" href="../admin/css/navb.css">
+       <link rel="stylesheet" href="../admin/css/tables.css">
+   
+        <!-- Glyp from git cdn JS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        <script src="https://unpkg.com/phosphor-icons"></script>
+       
+       <!--<title>Dashboard Sidebar Menu</title>--> 
+   </head>
+   <style>
+   
+   </style>
+   <body>
+    <nav class="sidebar close">
+
+        <header>
+            <div class="image">
+                <div class="image">
+                    <img src="../image/hris.png" alt="">
+                </div>
+
+                <div class="logo-text text">
+                    <span class="profession">Hello</span>
+                    <div class="name">Solomon</div>
+                    <div class="name">Cabreza</div>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+            <i class='ph-caret-right toggle'></i>
+        </header>
+     
+        <div class="menu-bar">
+            <div class="menu">
+                <div class="title">
+                    <i class="ph-chalkboard icon"></i>
+                    <h5>Admin Dashboard<h5>
+                </div>
+
+                    <button data-toggle="collapse" class="ph-address-book dropdown-btn">Manges <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="request.php">Personnel Request</a>
+                            <a href="timeRecord.html">Daily Time Record</a>
+                            <a href="jobInfo.html">Job Info</a>
+                        </div>
+
+                    <button data-toggle="collapse" class="ph-newspaper-clipping dropdown-btn">Reports <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="201files.html">201 Files</a>
+                            <a href="retention.php">Retention Report</a>
+                            </div>
+
+                    <button data-toggle="collapse" class="ph-list-plus dropdown-btn">Data Tables <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="dataTable.html">Profile</a>
+                            <a href="#">Management</a>
+                            <a href="#">Upkeep</a>
+                        </div>
+
+                    <button data-toggle="collapse" class="ph-gear dropdown-btn">Settings <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="system.php">System Access</a>
+                            <a href="#">User List</a>
+                        </div>
+            </div>
+
+            <div class="bottom-content">
+                <div id="txt" class="toggle-switch"></div>
+            </div>
+        </div>
+    </nav>
+   
+       <section class="home">
+           <div id="content">
+   
+               <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                   <div class="textLabel"><i class="ph-list-plus icon"></i><a>Admin |  Data Tables</a></div>
+                   <div class="userInfo">
+                       <div class="info">
+                           <div class="nameInfo">SolCabreza</div>
+                           <div class="company">Iconiqlast</div>
+                           <div class="position">Junior UX / UI Designer</div>
+                       </div>
+                       <div class="userImage">
+                           <img src="../image/prof.png" alt="">
+                           <a href="">Settings <i class="ph-gear"></i></a>
+                       </div>
+                   </div> 
+               </nav>
+   
+               <div class="formRequest">
+                   <div class="requestLeft">
+
+                       <div class="Boxsearch">
+                           <div class="searchs">
+                               <input type="text" class="searchTerms" placeholder="Name / Position / Code">
+                               <i class="fa fa-search"></i>
+                               </input>
+                           </div>
+                       </div>
+
+                        <div class="myRequest">
+                           <label><i data-feather="user" class="feathers"></i> My Requests <i data-feather="chevron-down"></i></label>
+                        </div>
+                        <div class="allRequest">
+                           <label><i data-feather="users" class="feathers"></i> Management <i data-feather="chevron-down"></i></label> 
+                        </div>
+                        <div class="allRequest">
+                            <label><i class="ph-wrench feathers"></i> Upkeep <i data-feather="chevron-down"></i></label> 
+                        </div>
+                        <div class="botRequest">
+                            <a><i data-feather="plus-square" class="feathers"></i> New</a>
+                        </div>
+                        
+                    </div>
+
+                   <div class="requestRight cute_scroll">
+
+                    <label>Education</label>
+
+                        <div class="titleUser">                            
+                            <div class="jobUser-details">
+                                <div class="edWrap">
+                                    <div class="titleCode" ><i class="ph-triangle"></i> code</div>
+                                    <div class="edName"><i class="ph-triangle"></i> Name</div>
+                                    <div class="edCompany"><i class="ph-triangle"></i> Company </div>
+                                </div>
+                                <div class="iconWrap">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="jobUser">
+                            <div class="jobUser-details">
+                                <div class="edWrap">
+                                    <div class="edCode">QST-1337</div>
+                                    <div class="edName">Abe Alvarez</div>
+                                    <div class="edCompany">Abe Alvarez</div>
+                                </div>
+                                <div class="iconWrap">
+                                    <i data-feather="edit-2" class="white"></i>
+                                    <i data-feather="delete" class="white"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="jobUser">
+                            <div class="jobUser-details">
+                                <div class="edWrap">
+                                    <div class="edCode">QST-1337</div>
+                                    <div class="edName">Abe Alvarez</div>
+                                    <div class="edCompany">Abe Alvarez</div>
+                                </div>
+                                <div class="iconWrap">
+                                    <i data-feather="edit-2" class="white"></i>
+                                    <i data-feather="delete" class="white"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="jobUser">
+                            <div class="jobUser-details">
+                                <div class="edWrap">
+                                    <div class="edCode">QST-1337</div>
+                                    <div class="edName">Abe Alvarez</div>
+                                    <div class="edCompany">Abe Alvarez</div>
+                                </div>
+                                <div class="iconWrap">
+                                    <i data-feather="edit-2" class="white"></i>
+                                    <i data-feather="delete" class="white"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="jobUser">
+                            <div class="jobUser-details">
+                                <div class="edWrap">
+                                    <div class="edCode">QST-1337</div>
+                                    <div class="edName">Abe Alvarez</div>
+                                    <div class="edCompany">Abe Alvarez</div>
+                                </div>
+                                <div class="iconWrap">
+                                    <i data-feather="edit-2" class="white"></i>
+                                    <i data-feather="delete" class="white"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="jobUser">
+                            <div class="jobUser-details">
+                                <div class="edWrap">
+                                    <div class="edCode">QST-1337</div>
+                                    <div class="edName">Abe Alvarez</div>
+                                    <div class="edCompany">Abe Alvarez</div>
+                                </div>
+                                <div class="iconWrap">
+                                    <i data-feather="edit-2" class="white"></i>
+                                    <i data-feather="delete" class="white"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="jobUser">
+                            <div class="jobUser-details">
+                                <div class="edWrap">
+                                    <div class="edCode">QST-1337</div>
+                                    <div class="edName">Abe Alvarez</div>
+                                    <div class="edCompany">Abe Alvarez</div>
+                                </div>
+                                <div class="iconWrap">
+                                    <i data-feather="edit-2" class="white"></i>
+                                    <i data-feather="delete" class="white"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="jobUser">
+                            <div class="jobUser-details">
+                                <div class="edWrap">
+                                    <div class="edCode">QST-1337</div>
+                                    <div class="edName">Abe Alvarez</div>
+                                    <div class="edCompany">Abe Alvarez</div>
+                                </div>
+                                <div class="iconWrap">
+                                    <i data-feather="edit-2" class="white"></i>
+                                    <i data-feather="delete" class="white"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                   </div>
+               </div>
+           </div>
+       </section>
+       
+       <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>   -->
+       <script src="../admin/function/slider.js"></script>
+       <script src="../admin/function/script.js"></script>
+       <script>
+           feather.replace()
+       </script>
+       <!-- <script>
+           $('.view').on('click',function(){
+       $('.modal-body').load('getContent.php?id=2',function(){
+           $('#myModal').modal({show:true});
+       });
+   });
+       </script> -->
+      
+   </body>
+   </html>
+   

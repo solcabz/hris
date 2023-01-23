@@ -1,0 +1,193 @@
+.tab{
+    display: flex;
+    flex-direction: row;
+}
+.tablinks{
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 7px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #FCFCFC;
+    /* HRIS - Drop Shadow */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.21);
+    border-radius: 13px 13px  0px 0px;  
+}
+.tablinks.active{
+    background: #1D75BD;
+    color: #FCFCFC;
+}
+.tabcontent{
+    display: none;
+}
+.tabcontent{
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 449px;
+    background: #FCFCFC;
+    /* HRIS - Drop Shadow */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.21);
+    border-radius: 21px;
+}
+.activityWrap,
+.memoWrap{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+    
+}
+
+.activityHeader,
+.memoHeader{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.btnActivity,
+.btnMemo{
+    display: flex;
+    flex-direction:row;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 150px;
+    color: #1D75BD;
+    border-bottom: 0.5px solid #1D75BD;
+    cursor: pointer;
+}
+.btnActivity.active, .btnActivity:hover,
+.btnMemo.active, .btnMemo:hover{
+    box-sizing: border-box;
+    align-items: center;
+    padding: 10px;
+    color: #f1efef;
+    background: #1D75BD;
+    border-radius: 8px ;
+}
+input{
+    border: none;
+    margin-top:5px;
+    background: #fcfcfc;
+}
+input:focus{
+    outline: none;
+}
+.searchs i{
+    color: 1px solid #f1efef;
+}
+
+.searchs{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #C2C2C2;
+    padding: 3.5px;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+}
+
+.activityCont,
+.memoCont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.entriesMemo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    color: #1D75BD;
+    border-bottom: 0.5px solid #1D75BD;
+    border-radius: 8px 8px 0px 0px;
+    width: 90%;
+}
+.breakInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.entriesActivity{
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    width: 90%;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.OT{
+    background: #FFC645;
+    color: #FFC645;
+}
+
+.OFF{
+    background: #E06625;
+    color: #E06625;
+}
+
+.frontDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+}
+.backDetails{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #FCFCFC;
+    font-weight: 600;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-between
+}
+.frontDetails p{
+    background: #fcfcfc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.backDetails p{
+    color: #FCFCFC;
+}
+.backDetails i{
+    color: #FCFCFC;
+}
+
+.statusDetails{
+    display:flex;
+    align-items: center;
+    width: 150px;
+}
+.statusDetails p{
+    background: #fcfcfc;
+    padding: 10px;
+    border-radius: 100%;
+    width:20px
+}

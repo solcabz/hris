@@ -1,0 +1,386 @@
+.feather {
+    margin-top:3px;
+    width: 14px;
+    height: 16px;
+}
+
+.eneCont{
+    width: 269px;
+    height: 610px;
+    justify-content: space-around;
+}
+
+.imageCont{
+    align-items: center;
+    justify-content: center;width: auto;
+    width: auto;
+}
+
+.enegramFrame{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 1040px;
+    
+}
+
+.titleHead{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px 16px;
+    height: 36px;
+    border-radius: 5px 5px 0px 0px;
+    color: #fafafa;
+}
+
+.bodyCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    color: #666666;
+    height: 284px;
+    border-radius: 0px 0px 5px 5px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.subCont{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+
+    width: 229px;
+    height: 45px;
+}
+
+.one{
+    background: #1D75BD;
+}
+
+.two{
+   background: #E06625;
+}
+.three{
+    background: #FFC645;
+}
+
+.blue{
+    background: #BAD6ED;
+}
+
+.orange{
+    background: #FFBD98;
+}
+
+.yellow{
+    background: #F2EAC9;
+}
+
+.yellow a,
+.yellow li{
+    color: #FFC645;
+}
+
+.orange a,
+.orange li{
+    color: #E06625;
+}
+
+.blue a,
+.blue li{
+    color: #1D75BD;
+}
+
+.more {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+i{
+    padding: 3px;
+}
+
+.bottomEne{
+    width: 1040px;
+    right: 0;
+    position: right;
+    display: inline-flex;
+    gap: 20px;
+    color: #1D75BD;
+}
+
+.taptPic{
+    width: 339px;
+}
+.taptInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 553px;
+    height: 287px;
+}
+
+
+.taptHeader{
+    text-align: center;
+    padding: 20px 24px;
+    height: 60px;
+    border-radius: 5px 5px 0px 0px;
+    margin: auto;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    width: 504px;
+}
+
+.taptFrame{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 26px;
+    width: 922px;
+    height: 379px;
+}
+
+.taptBody{
+    align-items: center;
+    padding: 15px 20px;
+    gap: 18px;
+    height: 227px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.discFrame{
+    display: flex;
+    flex-direction: row;
+    width: 553px;
+}
+
+.discHeader{
+    align-items: center;
+    padding: 20px 24px;
+    gap: 4px;
+    height: 60px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.form{
+    align-items: center;
+    position: absolute;
+    width: 1380px;
+    height: 531px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.21);
+    border-radius: 8px;
+    display: none;
+}
+
+.form.active{
+    align-items: center;
+    display:block;
+}
+
+.cover{
+    width: 100%;
+    margin: 0 auto;
+    background: whitesmoke;
+    padding: 5px 5%;
+}
+
+
+
+em{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 0 10px;
+}
+em.cur-page {
+    background: linear-gradient( 45deg, royalblue, #1D75BD);
+}
+
+.page-indicator{
+    height: 50px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10%;
+}
+
+.btnPrv{
+    margin: 20px;
+	padding: 8px 20px;
+	width: 100px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 4px;
+	background: linear-gradient( 45deg, #419fe1, #1D75BD);
+	color: whitesmoke;
+	float: left;
+	font-weight: bold;
+	position: relative;
+}
+.btnPrv:nth-of-type(1){
+    display: none;
+}
+
+.form.active{
+    display: block;
+}
+.field {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13px 0px;
+    gap: 10px;
+    width: 373px;
+    height: 47px;
+}
+
+.question{
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    gap: 10px;
+    
+    width: 397px;
+    height: 280px;
+    
+    border-right: 1px solid #1D75BD;
+}
+
+label{
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    color: #1D75BD;
+}
+input[type='radio']{
+    color: #1D75BD;
+    border: 2px solid #1D75BD;
+}
+.radio{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13px 0px;
+    gap: 10px;
+    width: 373px;
+    height: 47px;
+    border-bottom: 1px solid #1D75BD;
+}
+
+input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+    border-radius: 3px;
+    outline: none;
+    font-size: 16px;
+}
+.field>span{
+    margin-left: 30px;
+    display: block;
+    font-style: italic;
+    color: red;
+}
+form{
+    height: 650px;
+    margin: auto;
+    position: relative;
+}
+.form{
+    background: whitesmoke;
+    padding: 30px;
+    position: absolute;
+    width: 80%;
+    left: 5%;
+    top: 100px;
+    display: none;
+}
+form h1{
+    margin: 10px auto;
+    color: #419fe1;
+    text-align: center;
+    align-items: center;
+}
+form h1 i{
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.thanks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.infos{
+    text-align: center;
+    align-items: center;
+    padding-top: 7%;
+    padding-left: 5%;
+}
+.entry{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    height: 340px;
+}
+
+.answer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 410px;
+    height: 390px;
+}
+
+.effect-7{
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 11px;
+    gap: 15px;
+
+    width: 378px;
+    height: 46px;
+    color: #1D75BD;
+    /* Gray_02/10 */
+    background: #FFFFFF;
+    border: 1px solid #1D75BD;
+    border-radius: 4px;
+}

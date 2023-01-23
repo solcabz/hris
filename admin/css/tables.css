@@ -1,0 +1,242 @@
+*{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+}
+.formRequest{
+    display: flex;
+    flex-direction: row;
+    background: #FCFCFC;
+    /* HRIS - Drop Shadow */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.21);
+    border-radius: 21px;
+    padding: 25px 0px;
+    height: 610px;
+}
+
+.requestLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    gap: 33px;
+    border-right: 1px solid #2B3991;
+    width: 250px;
+    left: 40px;
+    top: 30px;
+}
+
+input{
+    border: none;
+    margin-top:5px;
+}
+input:focus{
+    outline: none;
+}
+.searchs i{
+    color: 1px solid #C2C2C2;
+}
+
+.searchs{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #C2C2C2;
+    padding: 3.5px;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+}
+
+.myRequest{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 10px;
+    gap: 5px;
+    width: 200px;
+    height: 101px;
+    background: #2B3991;
+    border: 0.5px solid #FCFCFC;
+    border-radius: 8px;
+    color: #fcfcfc;
+}
+.feathers{
+    width:18px;
+    height:18px;
+    font-size: 18px;;
+}
+
+.myRequest label{
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 9px;
+    gap: 8px;
+    width: 180px;
+    border-bottom: 0.5px solid #fcfcfc;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.myRequest a{
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.allRequest{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+}
+.allRequest label{
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 9px;
+    gap: 8px;
+    color: #2B3991;
+    width: 180px;
+    border-bottom: 0.5px solid #2B3991;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.allRequest a{
+    text-align: center;
+    color: #2B3991;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.botRequest{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    height: 85px;
+}
+.botRequest a{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 5px;
+    gap: 8px;
+    width: 180px;
+    color: #2B3991;
+    cursor: pointer;
+}
+.requestRight{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 10px;
+    overflow: hidden;
+    width:100%;
+    color: #2B3991;
+}
+.requestRight label{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.jobUser{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border-radius: 5px;
+    padding: 0px 25px;
+    background: #2B3991;
+}
+.titleUser{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border-radius: 5px;
+    padding: 0px 25px;
+}
+
+.jobUser-details{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px 0px 10px;
+    gap: 45px;
+    isolation: isolate;
+    justify-content: space-between;
+    width: 100%;
+}
+.label{
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background: #FCFCFC;
+    border-radius: 6px;
+    color: #2B3991;
+}
+.iconWrap{
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+
+.edCode{
+    width: 120px;
+    background: #FCFCFC;
+    border-radius: 6px;
+    padding: 10px;
+    color: #2B3991;
+    font-weight: 600;
+}
+
+.edName{
+    width: 190px;
+    background: #FCFCFC;
+    border-radius: 6px;
+    padding: 10px;
+    color: #2B3991;
+    font-weight: 600;
+}
+.edCompany{
+    width: 250px;
+    background: #FCFCFC;
+    border-radius: 6px;
+    padding: 10px;
+    color: #2B3991;
+    font-weight: 600;
+}
+.edWrap{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.titleCode{
+    width: 120px;
+    background: #FCFCFC;
+    border-radius: 6px;
+    padding: 15px;
+    color: #2B3991;
+    font-weight: 600;
+    align-items: center;
+}

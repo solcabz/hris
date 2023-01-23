@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HRIS Admin</title>
+    <!-- <link rel="icon" type="image/x-icon" href="img/hricon.ico"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../image/hris.png" type="image/png">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../admin/css/navb.css">
+    <link rel="stylesheet" href="../admin/css/slider.css">
+     <!-- Glyp from git cdn JS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+     <script src="https://unpkg.com/phosphor-icons"></script>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body >
+    <nav class="sidebar close">
+
+        <header>
+            <div class="image">
+                <div class="image">
+                    <img src="../image/hris.png" alt="">
+                </div>
+
+                <div class="logo-text text">
+                    <span class="profession">Hello</span>
+                    <div class="name">Solomon</div>
+                    <div class="name">Cabreza</div>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+            <i class='ph-caret-right toggle'></i>
+        </header>
+     
+        <div class="menu-bar">
+            <div class="menu">
+                <div class="title">
+                    <i class="ph-chalkboard icon"></i>
+                    <h5>Admin Dashboard<h5>
+                </div>
+
+                    <button data-toggle="collapse" class="ph-address-book dropdown-btn">Manges <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="request.php">Personnel Request</a>
+                            <a href="timeRecord.html">Daily Time Record</a>
+                            <a href="jobInfo.html">Job Info</a>
+                        </div>
+
+                    <button data-toggle="collapse" class="ph-newspaper-clipping dropdown-btn">Reports <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="201files.html">201 Files</a>
+                            <a href="retention.php">Retention Report</a>
+                            </div>
+
+                    <button data-toggle="collapse" class="ph-list-plus dropdown-btn">Data Tables <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="dataTable.html">Profile</a>
+                            <a href="#">Management</a>
+                            <a href="#">Upkeep</a>
+                        </div>
+
+                    <button data-toggle="collapse" class="ph-gear dropdown-btn">Settings <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="system.php">System Access</a>
+                            <a href="#">User List</a>
+                        </div>
+            </div>
+
+            <div class="bottom-content">
+                <div id="txt" class="toggle-switch"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="textLabel"><i class="ph-chalkboard icon"></i><a>Admin Dashboard</a></div>
+                <div class="userInfo">
+                    <div class="info">
+                        <div class="nameInfo">SolCabreza</div>
+                        <div class="company">Iconiqlast</div>
+                        <div class="position">Junior UX / UI Designer</div>
+                    </div>
+                    <div class="userImage">
+                        <img src="../image/prof.png" alt="">
+                        <a href="">Settings <i class="ph-gear"></i></a>
+                    </div>
+                </div> 
+            </nav>
+
+            <div class="contFile">
+                
+                <div class="wrapCont">
+                    <div class='titleCont'>
+                        <a><i class="ph-person icon"></i>Personal Request</a>
+                    </div>
+                    <!-- First page -->
+                    <div class="bodyCont">
+                        <div class="boxs">
+                            <a><i data-feather="plus-square"></i> Add Employee</a>
+                        </div>
+                        <div class="boxs">
+                            <a><i data-feather="user-check"></i> My Request</a>
+                        </div>
+                        <!-- <div>
+                            <a> 4 New Applicants</a>
+                            <a> 2 Pending Request/s</a>
+                        </div >
+                        <br> -->
+                
+                        <a style="font-size: 8px;"> 4 Applicants</a>
+                
+                        <div class="EntriesWindow">
+                            <div class="entry">
+                                <div class="detailPosition">
+                                    <label>Data Admin</label>
+                                </div>
+                                <div class="detailsName">
+                                    <div class="nameDate">
+                                        <label>Jane Due</label>
+                                        <label>08/08/2022</label>
+                                    </div>
+                                    <div>
+                                        <a class="positions">view ...</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="entry">
+                                <div class="detailPosition">
+                                    <label>Graphic Designer</label>
+                                </div>
+                                <div class="detailsName">
+                                    <div class="nameDate">
+                                        <label>Ryle Rider</label>
+                                        <label>08/08/2022</label>
+                                    </div>
+                                    <div>
+                                        <a class="positions">view ...</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div> 
+                        <div class="EntriesWindow">
+                            <div class="entry">
+                                <div class="detailPosition">
+                                    <label>Graphic Designer</label>
+                                </div>
+                                <div class="detailsName">
+                                    <div class="nameDate">
+                                        <label>Jane Due</label>
+                                        <label>08/08/2022</label>
+                                    </div>
+                                    <div>
+                                        <a class="positions">view ...</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="entry">
+                                <div class="detailPosition">
+                                    <label>Data Admin</label>
+                                </div>
+                                <div class="detailsName" >
+                                    <div class="nameDate">
+                                        <label>Jane Due</label>
+                                        <label>08/08/2022</label>
+                                    </div>
+                                    <div>
+                                        <a class="positions">view ...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="EntriesWindow">
+                            <div class="entry">
+                                <div class="detailPosition" >
+                                    <label>Motion Graphic</label>
+                                </div>
+                                <div class="detailsName">
+                                    <div class="nameDate">
+                                        <label>Jane Due</label>
+                                        <label>08/08/2022</label>
+                                    </div>
+                                    <div>
+                                        <a class="positions">view ...</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="entry">
+                                <div class="detailPosition">
+                                    <label>Video Editor</label>
+                                </div>
+                                <div class="detailsName">
+                                    <div class="nameDate">
+                                        <label>Jane Due</label>
+                                        <label>08/08/2022</label>
+                                    </div>
+                                    <div>
+                                        <a class="positions">view ...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='sliderDot' style="text-align:center">
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    </div>
+                    <div class="viewMem">
+                        <i data-feather="chevrons-right" class="feather-16"></i> <a>View Personnel Requests</a>
+                    </div>
+                </div>
+
+
+                <div class="wrapCont">
+                    <div class='titleCont'>
+                        <a><i class="ph-clock icon"></i>Daily Time Record</a>
+                    </div>
+                    <!-- First page -->
+                    <div class="Contbody">
+                        <div class="boxs">
+                            <a> 4 Pending Request/s</a>
+                        </div>
+
+                        <div class="WindowEntries">
+                            <div class="entry">
+                                <div class="dateType">
+                                    <div class="requestType">
+                                        <label>OT</label>
+                                        <a>Aug. 27</a>
+                                    </div>
+                                </div>
+                                <div class="requestCTA">
+                                    <div class="nameDate">
+                                        <label>Requested by: </label>
+                                        <label>Michael Mike Due</label>
+                                    </div>
+                                    <div>
+                                        <a class="positions">view ...</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="entry">
+                                <div class="dateType">
+                                    <div class="requestType">
+                                        <label>OFF</label>
+                                        <a>Aug. 27</a>
+                                    </div>
+                                </div>
+                                <div class="requestCTA">
+                                    <div class="nameDate">
+                                        <label>Requested by: </label>
+                                        <label>Michael Mike Due</label>
+                                    </div>
+                                    <div>
+                                        <a class="positions">view ...</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="entry">
+                                <div class="dateType">
+                                    <div class="requestType">
+                                        <label>OT</label>
+                                        <a>Aug. 27</a>
+                                    </div>
+                                </div>
+                                <div class="requestCTA">
+                                    <div class="nameDate">
+                                        <label>Requested by: </label>
+                                        <label>Michael Mike Due</label>
+                                    </div>
+                                    <div>
+                                        <a class="positions">view ...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class='sliderDot' style="text-align:center">
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    </div>
+                    <div class="viewMem">
+                        <i data-feather="chevrons-right" class="feather-16"></i> <a>View Daily Time Record</a>
+                    </div>
+                </div>
+
+                <div class="Contwrap">
+                    <div class='ContTitle'>
+                        <a><i class="ph-clock icon"></i>Employee Lookup</a>
+                    </div>
+                    <!-- First page -->
+                    <div class="Contbody">
+                        <div class="searchBox">
+                            <div class="search">
+                               <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                               <button type="submit" class="searchButton">
+                                 <i class="fa fa-search"></i>
+                              </button>
+                            </div>
+                        </div>
+
+                         <div class="line"></div>
+
+                        <div class="WindowEntries">
+                            <div class="ProfileCard">
+                                <div class="userInfo">
+                                    <div class="userImages">
+                                        <img src="../image/prof.png" alt="">
+                                    </div>
+                                    <div class="infoCard">
+                                        <div class="NameCard">SolCabreza</div>
+                                        <div class="company">Iconiqlast</div>
+                                        <div class="position">Junior UX / UI Designer</div>
+                                    </div>
+                                    <div class="cardInfo">
+                                        <div class="positions">Edit DTR <i class="ph-address-book"></i></div>
+                                        <div class="positions">Edit 201</div>
+                                        <div class="positions">View Profile</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ProfileCard">
+                                <div class="userInfo">
+                                    <div class="userImages">
+                                        <img src="../image/prof.png" alt="">
+                                    </div>
+                                    <div class="infoCard">
+                                        <div class="NameCard">SolCabreza</div>
+                                        <div class="company">Iconiqlast</div>
+                                        <div class="position">Junior UX / UI Designer</div>
+                                    </div>
+                                    <div class="cardInfo">
+                                        <div class="positions">Edit DTR</div>
+                                        <div class="positions">Edit 201</div>
+                                        <div class="positions">View Profile</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ProfileCard">
+                                <div class="userInfo">
+                                    <div class="userImages">
+                                        <img src="../image/prof.png" alt="">
+                                    </div>
+                                    <div class="infoCard">
+                                        <div class="NameCard">SolCabreza</div>
+                                        <div class="company">Iconiqlast</div>
+                                        <div class="position">Junior UX / UI Designer</div>
+                                    </div>
+                                    <div class="cardInfo">
+                                        <div class="positions">Edit DTR</div>
+                                        <div class="positions">Edit 201</div>
+                                        <div class="positions">View Profile</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>  
+                        <div class="viewMem">
+                            <div class="memview">
+                                <i data-feather="chevrons-right" class="feather-16"></i> <a>View Dail Time Record</a>
+                            </div>
+                            <div class="memview">
+                                <i data-feather="chevrons-right" class="feather-16"></i> <a>View 201 Files</a> 
+                            </div>
+                            <div class="memview">     
+                                <i data-feather="chevrons-right" class="feather-16"></i> <a>View Management Tables</a>
+                            </div> 
+                        </div>
+                       
+                </div>
+
+
+                <div class="contDetails">
+                    
+                    <div class="MembersCont">
+                        <div>
+                            <label class="Rcontact" for="">Recent Contacts</label>
+                            <div class="Rcontacts">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="avail" for="">Available</label>
+                            <div class="avilable">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="awayl" for="">Away / Time Off </label>
+                            <div class="away">
+                            </div>
+                        </div>
+                        <div class="viewMem">
+                            <i data-feather="chevrons-right" class="feather-16"></i> <a>View Members</a>
+                        </div>
+                    </div>
+
+
+                    <div class="calendarCont">
+                        <div class="calendarWrap">
+                        </div>
+                        <div class="viewMem">
+                            <i data-feather="chevrons-right" class="feather-16"></i> <a>View Daily Time Record</a>
+                        </div>
+                    </div>
+                    <!-- First page -->
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="../admin/function/slider.js"></script>
+    <script src="../admin/function/script.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("EntriesWindow");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HRIS | Calendar</title>
+    <!-- <link rel="icon" type="image/x-icon" href="img/hricon.ico"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/hris.png" type="image/png">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/navb.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/date.css">
+     <!-- Glyp from git cdn JS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+     <script src="https://unpkg.com/phosphor-icons"></script>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+
+<body >
+    <nav class="sidebar close">
+        <header>
+            <div class="image">
+                <div class="image">
+                    <img src="image/hris.png" alt="">
+                </div>
+
+                <div class="logo-text text">
+                    <span class="profession">Hello</span>
+                    <div class="name">Solomon</div>
+                    <div class="name">Cabreza</div>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+            <i class='ph-caret-right toggle'></i>
+        </header>
+     
+        <div class="menu-bar">
+            <div class="menu">
+                <a href="home.html" class="title">
+                    <i class="ph-chalkboard icon"></i>
+                    <h5>My dashboard</h5>
+                </a>
+
+                <button data-toggle="collapse" class="ph-address-book dropdown-btn">Workspace<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="memos.html">Memos & Activity Log</a>
+                        <a href="members.html">Members</a>
+                        <a href="calendar.html">Calendar</a>
+                        <a href="payslip.html">Payslip</a>
+                     </div>
+
+                <button data-toggle="collapse" class="ph-newspaper-clipping dropdown-btn">My Acount<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="account.html">Personal Information</a>
+                        <a href="education.html">Background & Education</a>
+                        <a href="benefits.html">Benefits</a>
+                    </div>
+
+                <button data-toggle="collapse" class="ph-question dropdown-btn">Settings <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                      <a href="personality.html">Personality Tests</a>
+                      <a href="evaluation.html">Employee Evaluation Index</a>
+                    </div>
+            </div>
+
+            <div class="bottom-content">
+                 <div id="txt" class="toggle-switch"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="textLabel"><i class="ph-chalkboard icon"></i><a> Workspace</a> <i class="ph-caret-double-right icon"></i><a> Calendar</a> <i class="ph-caret-circle-up icon"></i></div>
+                <div class="userInfo">
+                    <div class="info">
+                        <div class="nameInfo">SolCabreza</div>
+                        <div class="company">Iconiqlast</div>
+                        <div class="position">Junior UX / UI Designer</div>
+                    </div>
+                    <div class="userImage">
+                        <img src="image/prof.png" alt="">
+                        <a href="">Settings <i class="ph-gear"></i></a>
+                    </div>
+                 </div> 
+            </nav>
+
+            <div class="formDate">
+                <div class="timeRecord">
+                    <h1></h1>
+                    <div class="dateReqWrap">
+                        <a class="nav-item" href="#meeting"><i  class="ph-handshake feather-16"></i> View Meetings</a>
+                        <a class="nav-item" href="#TimeOffOvertime"><i  class="ph-clock-clockwise feather-16"></i> View Time Off / Overtime</a>
+                        <a class="nav-item" href="#scheduled"><i data-feather="calendar" class="feather-16"></i> View Schedule</a>
+                    </div>
+                    <div class="scheduledFrame">
+                        <div class="view" id="meeting">
+                            <div class="userEntry">
+                                <img src="image/prof.png" alt="">
+                                <div class="entryInfo">
+                                    <p>John Doe</p>
+                                    <p>@ 3:00pm - 2 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="userEntry">
+                                <img src="image/prof.png" alt="">
+                                <div class="entryInfo">
+                                    <p>John Doe</p>
+                                    <p>@ 3:00pm - 2 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view" id="TimeOffOvertime">
+                            <div class="navtime">
+                                <a class="nav-item" href="#pending">Pending</a>
+                                <a class="nav-item" href="#approved">Approved</a>
+                            </div>
+                            <div id="pending">
+                                <div class="userEntry">
+                                    <img src="image/prof.png" alt="">
+                                    
+                                    <div class="entryInfo">
+                                        <p>John Doe</p>
+                                        <p>@ 3:00pm - 2 hours ago</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="view" id="scheduled">
+                            <div class="userEntry">
+                                <img src="image/prof.png" alt="">
+                                <div class="entryInfo">
+                                    <p>John Doe</p>
+                                    <p>@ 3:00pm - 2 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calendar">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="admin/function/calendar.js"></script>
+    <script src="admin/function/navtabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="function/nav.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+<script>
+    $(".nav-item").click(function() {
+    $('.view').hide();
+    $(".nav-item").removeClass("active");
+    $(this).addClass("active");
+    $(this.getAttribute('href')).fadeIn(650);
+    return false;
+    });
+ </script> 
+
+<script>
+    $(".nav-item").click(function() {
+    $('.view2').hide();
+    $(".nav-item").removeClass("active");
+    $(this).addClass("active");
+    $(this.getAttribute('href')).fadeIn(650);
+    return false;
+    });
+ </script> 
+
+</body>
+</html>

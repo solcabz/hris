@@ -1,0 +1,153 @@
+
+.formDate{
+    display: flex;
+    flex-direction: row;
+    background: #FCFCFC;
+    /* HRIS - Drop Shadow */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.21);
+    border-radius: 21px;
+    padding: 25px 0px;
+}
+
+
+.timeRecord{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 25px;
+    border-right: 1px solid #2B3991;
+    width: 390px;
+}
+
+h1{
+    color: #2B3991;
+    padding: 0 25px;
+}
+.dateReqWrap{
+    padding:  25px;
+    border-bottom: 1px solid #2B3991;
+}
+
+.dateReqWrap a{
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    color: #2B3991;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 9px;
+    cursor: pointer;
+    gap: 10px;
+}
+.tabdate{
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: row;
+    width: 390px;
+    height: 27px;
+    align-items: center;
+    justify-content: center;
+    color: #2B3991;
+    gap: 45px;
+}
+
+.dateBot{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.entryRequest{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    padding: 10px;
+    gap: 5px;
+    overflow: auto;
+}
+
+.entriesOT{
+    margin-top:10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 290px;
+    height: 60px;
+    background: #FFD577;
+    border-radius: 8px;
+}
+
+.entriesOFF{
+    margin-top:10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 290px;
+    height: 60px;
+
+    background: #FFBD98;
+    border-radius: 8px;
+}
+
+.entryWrap{
+    display: flex;
+    flex-direction:row;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.entryWrap label{
+    width: 39px;
+    height: 27px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color:#FFD577;
+    background: #FCFCFC;
+    border-radius: 5px;
+}
+
+
+.btnWrap{
+    display: flex;
+    flex-direction:row;
+    width: 250px;
+    justify-content: space-around;
+}
+.nameRequest{
+    color: white;
+    width: 120px;
+}
+
+.btnView{
+    width: 39px;
+    height: 13px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #FCFCFC;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    color: #FFD577;
+    cursor: pointer;
+}
+
+.nav-item.active{
+    color: #FA3E3E;
+    border-bottom: 1px solid #FA3E3E;
+    padding-bottom: 15px;
+}
+
+.hidden{
+    display:none;
+}
+
+ 

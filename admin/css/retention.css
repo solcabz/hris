@@ -1,0 +1,149 @@
+.formRequest{
+    display: flex;
+    flex-direction: column;
+    background: #FCFCFC;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    /* HRIS - Drop Shadow */
+    /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.21); */
+    border-radius: 21px;
+    padding: 25px;
+}
+
+.pieWrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 770px;
+    height: 580px;
+    background: whitesmoke;
+    /* HRIS - Drop Shadow */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.21);
+    border-radius: 21px;
+    gap:10px;
+}
+.pieDets{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.headPie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 5px;
+    isolation: isolate;
+    width: 100%;
+}
+
+.CompanyNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    height: 30px;
+}
+
+.companyName{
+    justify-content: center;
+    align-items: center;
+    padding: 3px 5px;
+    background: #FF9000;
+    border-radius: 13px;
+    color: white;
+}
+
+
+input{
+    border: none;
+    margin-top:5px;
+}
+input:focus{
+    outline: none;
+}
+.searchs i{
+    color: 1px solid #C2C2C2;
+}
+
+.searchs{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #C2C2C2;
+    padding: 1.5px;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+}
+
+.RetentionCard{
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    gap: 20px;
+}
+
+.wrapCard{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap:15px;
+}
+
+p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0;
+}
+
+.company-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 26px;
+    gap: 8px
+}
+
+.company-head a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+}
+.Specialization{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Specialization a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.reportFrame{
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 10px;
+    gap: 15px;
+    width: 190px;
+    border-bottom: 0.5px solid #424242;
+
+}

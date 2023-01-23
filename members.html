@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HRIS | Members</title>
+    <!-- <link rel="icon" type="image/x-icon" href="img/hricon.ico"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/hris.png" type="image/png">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/navb.css">
+    <link rel="stylesheet" href="css/member.css">
+     <!-- Glyp from git cdn JS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+     <script src="https://unpkg.com/phosphor-icons"></script>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+
+<body >
+    <nav class="sidebar close">
+        <header>
+            <div class="image">
+                <div class="image">
+                    <img src="image/hris.png" alt="">
+                </div>
+
+                <div class="logo-text text">
+                    <span class="profession">Hello</span>
+                    <div class="name">Solomon</div>
+                    <div class="name">Cabreza</div>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+            <i class='ph-caret-right toggle'></i>
+        </header>
+     
+        <div class="menu-bar">
+            <div class="menu">
+                <a href="home.html" class="title">
+                    <i class="ph-chalkboard icon"></i>
+                    <h5>My dashboard</h5>
+                </a>
+
+                <button data-toggle="collapse" class="ph-address-book dropdown-btn">Workspace<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="memos.html">Memos & Activity Log</a>
+                        <a href="members.html">Members</a>
+                        <a href="calendar.html">Calendar</a>
+                        <a href="payslip.html">Payslip</a>
+                     </div>
+
+                <button data-toggle="collapse" class="ph-newspaper-clipping dropdown-btn">My Acount<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="account.html">Personal Information</a>
+                        <a href="education.html">Background & Education</a>
+                        <a href="benefits.html">Benefits</a>
+                    </div>
+
+                <button data-toggle="collapse" class="ph-question dropdown-btn">Settings <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                      <a href="personality.html">Personality Tests</a>
+                      <a href="evaluation.html">Employee Evaluation Index</a>
+                    </div>
+            </div>
+
+            <div class="bottom-content">
+                 <div id="txt" class="toggle-switch"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="textLabel"><i class="ph-chalkboard icon"></i><a> Workspace</a> <i class="ph-caret-double-right icon"></i><a> Members</a> <i class="ph-caret-circle-up icon"></i></div>
+                <div class="userInfo">
+                    <div class="info">
+                        <div class="nameInfo">SolCabreza</div>
+                        <div class="company">Iconiqlast</div>
+                        <div class="position">Junior UX / UI Designer</div>
+                    </div>
+                    <div class="userImage">
+                        <img src="image/prof.png" alt="">
+                        <a href="">Settings <i class="ph-gear"></i></a>
+                    </div>
+                 </div> 
+            </nav>
+
+            <div class="membersWrap">
+                <div class="memberNav">
+                    <a class="nav-item" href="#team"><i class="ph-users"></i> My Team</a>
+                    <a class="nav-item" href="#chart"><i class="ph-presentation-chart"></i> Org Chart</a>
+                    <a class="nav-item" href="#employee"><i class="ph-magnifying-glass"></i> Employee Lookup</a>
+                </div>
+                <div class="memberFrame" id="team">
+                    <div class="teamWrap">
+                        <div class="teamLeft">
+                            <label>33rd Week of the Year</label>
+                            <h1></h1>
+                            <p>Recent Contacts</p>
+                            <div class="recentContacts">
+                                <img src="image/prof.png">
+                                <img src="image/prof.png">
+                                <img src="image/prof.png">
+                                <img src="image/prof.png">
+                            </div>
+
+                            <p>13 Available</p>
+
+                            <div class="teamMini">
+                                <div class="available">
+                                    <img src="image/prof.png">
+                                    <div class="availableInfo">
+                                        <div>
+                                            <div class="nameDetails">SolCabreza</div>
+                                            <div class="position">Junior UX / UI Designer</div>
+                                        </div>
+                                        <div class="availableBTN">
+                                            <a class="viewAvailable">view...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="available">
+                                    <img src="image/prof.png">
+                                    <div class="availableInfo">
+                                        <div>
+                                            <div class="nameDetails">SolCabreza</div>
+                                            <div class="position">Junior UX / UI Designer</div>
+                                        </div>
+                                        <div class="availableBTN">
+                                            <a class="viewAvailable">view...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="teamRight">
+                            <div class="requestEntries">    
+                                <div class="offWrap">
+                                    <label>Away / Time Off </label>
+                                    <div class="awayMember">
+                                        <img src="image/prof.png">
+                                        <img src="image/prof.png">
+                                        <img src="image/prof.png">
+                                    </div>
+                                    <div class="offCont">
+                                        <label>OFF</label>
+                                        <div class="requestedUser">
+                                            <p>Michael Mike</p>
+                                            <p>Aug 3-7</p> 
+                                        </div>
+                                        <a>view...</a>
+                                    </div>
+                                </div>
+                                <div class="otWrap">
+                                    <label>Overtime</label>
+                                    <div class="otMember">
+                                        <img src="image/prof.png">
+                                        <img src="image/prof.png">
+                                        <img src="image/prof.png">
+                                    </div>
+                                    <div class="otCont">
+                                        <label>OT</label>
+                                        <div class="requestedUser">
+                                            <p>Michael Mike</p>
+                                            <p>Aug 3-7</p> 
+                                        </div>
+                                        <a>view...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="memberFrame" id="chart">
+                    <div class="chartFrame">
+                        <div class="chartEntry">
+                            <img src="image/prof.png">
+                            <div class="orgInfo">
+                                <p>Solcabz</p>
+                                <label>Studio Director</label>
+                            </div>
+                            <div class="orgchartBtn">
+                                <a>View...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="memberFrame" id="employee">
+                    <div class="employeeWrap">
+                        
+                        </div>
+                        <div class="searchBar">
+                            <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+                            <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                          </div>
+                        <div class="empSearch">
+                            <div class="searchWrap">
+                                <div class="infoSearch">
+                                    <div class="searchRow">
+                                        <img src="image/prof.png" >
+                                        <div class="searchDetails">
+                                            <label>Solcabz</label>
+                                            <p class="companyInfo">Iconiqlast</p>
+                                            <p class="jobPosition">Web developer</p>
+                                        </div>
+                                    </div>
+                                    <div class="btnview">
+                                        <a class="profileView">View Profile <i class="ph-user-circle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="searchWrap">
+                                <div class="infoSearch">
+                                    <div class="searchRow">
+                                        <img src="image/prof.png" >
+                                        <div class="searchDetails">
+                                            <label>Solcabz</label>
+                                            <p class="companyInfo">Iconiqlast</p>
+                                            <p class="jobPosition">Web developer</p>
+                                        </div>
+                                    </div>
+                                    <div class="btnview">
+                                        <a class="profileView">View Profile <i class="ph-user-circle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="admin/function/navtabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="function/nav.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <script>
+        $(".nav-item").click(function() {
+        $('.memberFrame').hide();
+        $(".nav-item").removeClass("active");
+        $(this).addClass("active");
+        $(this.getAttribute('href')).fadeIn(650);
+        return false;
+        });
+    </script> 
+
+</body>
+</html>

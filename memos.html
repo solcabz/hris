@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HRIS | Memo & Activity Log</title>
+    <!-- <link rel="icon" type="image/x-icon" href="img/hricon.ico"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/hris.png" type="image/png">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/navb.css">
+    <link rel="stylesheet" href="css/memos.css">
+     <!-- Glyp from git cdn JS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+     <script src="https://unpkg.com/phosphor-icons"></script>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+
+<body >
+    <nav class="sidebar close">
+        <header>
+            <div class="image">
+                <div class="image">
+                    <img src="image/hris.png" alt="">
+                </div>
+
+                <div class="logo-text text">
+                    <span class="profession">Hello</span>
+                    <div class="name">Solomon</div>
+                    <div class="name">Cabreza</div>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+            <i class='ph-caret-right toggle'></i>
+        </header>
+     
+        <div class="menu-bar">
+            <div class="menu">
+                <a href="home.html" class="title">
+                    <i class="ph-chalkboard icon"></i>
+                    <h5>My dashboard</h5>
+                </a>
+
+                <button data-toggle="collapse" class="ph-address-book dropdown-btn">Workspace<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="memos.html">Memos & Activity Log</a>
+                        <a href="members.html">Members</a>
+                        <a href="calendar.html">Calendar</a>
+                        <a href="payslip.html">Payslip</a>
+                     </div>
+
+                <button data-toggle="collapse" class="ph-newspaper-clipping dropdown-btn">My Acount<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="account.html">Personal Information</a>
+                        <a href="education.html">Background & Education</a>
+                        <a href="benefits.html">Benefits</a>
+                    </div>
+
+                <button data-toggle="collapse" class="ph-question dropdown-btn">Settings <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                      <a href="personality.html">Personality Tests</a>
+                      <a href="evaluation.html">Employee Evaluation Index</a>
+                    </div>
+            </div>
+
+            <div class="bottom-content">
+                 <div id="txt" class="toggle-switch"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="textLabel"><i class="ph-chalkboard icon"></i><a> Workspace</a> <i class="ph-caret-double-right icon"></i><a> Memo & Activity Log</a> <i class="ph-caret-circle-up icon"></i></div>
+                <div class="userInfo">
+                    <div class="info">
+                        <div class="nameInfo">SolCabreza</div>
+                        <div class="company">Iconiqlast</div>
+                        <div class="position">Junior UX / UI Designer</div>
+                    </div>
+                    <div class="userImage">
+                        <img src="image/prof.png" alt="">
+                        <a href="">Settings <i class="ph-gear"></i></a>
+                    </div>
+                 </div> 
+            </nav>
+
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Memos')">Memos</button>
+                <button class="tablinks" onclick="openCity(event, 'ActivityLog')">Activity Log</button>
+            </div>
+
+
+            <div id="Memos" class="tabcontent">
+                <div class="memoWrap">
+                    <div class="memoHeader">
+                        <a class="btnMemo"><i class="ph-list-dashes"></i> All</a>
+                        <a class="btnMemo active"><i class="ph-envelope"></i> Unread</a>
+                        <a class="btnMemo"><i class="ph-envelope-open"></i> Drafts</a>
+                        <a class="btnMemo"><i class="ph-plus"></i> create</a>
+                        <div class="Boxsearch">
+                            <div class="searchs">
+                                <input type="text" class="searchTerms" placeholder="Search">
+                                <i class="fa fa-search"></i>
+                                </input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="memoCont">
+                        <div class="entriesMemo">
+                            <div class="breakInfo">
+                                <label>Wendy Cunningham</label>
+                                <label>Aug. 23, 2022</label>
+                                <label>66-71-003-AUD</label>
+                                <label>Unlimited access to 200...</label>
+                            </div>
+                            <i class="ph-caret-right icon" ></i>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              
+              <div id="ActivityLog" class="tabcontent">
+                <div class="activityWrap">
+                    <div class="activityHeader">
+                        <a class="btnActivity"><i class="ph-list-dashes"></i> All</a>
+                        <a class="btnActivity"><i class="ph-hourglass"></i> Pending</a>
+                        <a class="btnActivity active"><i class="ph-user-list"></i> My Activity</a>
+                        <div class="Boxsearch">
+                            <div class="searchs">
+                                <input type="text" class="searchTerms" placeholder="Search">
+                                <i class="fa fa-search"></i>
+                                </input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activityCont">
+                        <div class="entriesActivity OT">
+                            <div class="frontDetails">
+                                <p>Aug. 15, 2022</p>
+                                <p>02:22 AM</p>
+                                <p>OFF</p>
+                            </div>
+                            <div class="backDetails">
+                                <p>Request from: Michael Mike</p>
+                                <i class="ph-caret-right"></i>
+                            </div>
+                            <div class="statusDetails">
+                                <p>
+                                    <i class="ph-check"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="entriesActivity OFF">
+                            <div class="frontDetails">
+                                <p>Aug. 15, 2022</p>
+                                <p>02:22 AM</p>
+                                <p>OT</p>
+                            </div>
+                            <div class="backDetails">
+                                <p>Request from: Michael Mike</p>
+                                <i class="ph-caret-right"></i>
+                            </div>
+                            <div class="statusDetails">
+                                <p>
+                                    <i class="ph-check"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            
+        </div>
+    </section>
+    <script src="function/nav.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+
+</body>
+</html>

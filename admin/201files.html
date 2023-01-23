@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HRIS Admin | 201 Files</title>
+    <!-- <link rel="icon" type="image/x-icon" href="img/hricon.ico"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="icon" href="../image/hris.png" type="image/png">
+    <link rel="stylesheet" href="../admin/css/jobInfo.css">
+    <link rel="stylesheet" href="../admin/css/navb.css">
+    <link rel="stylesheet" href="../admin/css/employeeWindow.css">
+
+     <!-- Glyp from git cdn JS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+     <script src="https://unpkg.com/phosphor-icons"></script>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+
+<body>
+    <nav class="sidebar close">
+
+        <header>
+            <div class="image">
+                <div class="image">
+                    <img src="../image/hris.png" alt="">
+                </div>
+
+                <div class="logo-text text">
+                    <span class="profession">Hello</span>
+                    <div class="name">Solomon</div>
+                    <div class="name">Cabreza</div>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+            <i class='ph-caret-right toggle'></i>
+        </header>
+     
+        <div class="menu-bar">
+            <div class="menu">
+                <div class="title">
+                    <i class="ph-chalkboard icon"></i>
+                    <h5>Admin Dashboard<h5>
+                </div>
+
+                    <button data-toggle="collapse" class="ph-address-book dropdown-btn">Manges <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="request.php">Personnel Request</a>
+                            <a href="timeRecord.html">Daily Time Record</a>
+                            <a href="jobInfo.html">Job Info</a>
+                        </div>
+
+                    <button data-toggle="collapse" class="ph-newspaper-clipping dropdown-btn">Reports <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="201files.html">201 Files</a>
+                            <a href="retention.php">Retention Report</a>
+                            </div>
+
+                    <button data-toggle="collapse" class="ph-list-plus dropdown-btn">Data Tables <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="dataTable.html">Profile</a>
+                            <a href="#">Management</a>
+                            <a href="#">Upkeep</a>
+                        </div>
+
+                    <button data-toggle="collapse" class="ph-gear dropdown-btn">Settings <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="system.phpp">System Access</a>
+                            <a href="#">User List</a>
+                        </div>
+            </div>
+
+            <div class="bottom-content">
+                <div id="txt" class="toggle-switch"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="textLabel"><i class="ph-chalkboard icon"></i><a>Admin | 201 Files</a></div>
+                <div class="userInfo">
+                    <div class="info">
+                        <div class="nameInfo">SolCabreza</div>
+                        <div class="company">Iconiqlast</div>
+                        <div class="position">Junior UX / UI Designer</div>
+                    </div>
+                    <div class="userImage">
+                        <img src="../image/prof.png" alt="">
+                        <a href="">Settings <i class="ph-gear"></i></a>
+                    </div>
+                </div> 
+            </nav>
+
+            <div class="jobInfoFrame">
+                <nav class="navInfo">
+                    <div class="Boxsearch">
+                        <div class="searchs">
+                           <input type="text" class="searchTerms" placeholder="Name / Position / Code">
+                           <i class="fa fa-search"></i>
+                        </input>
+                        </div>
+                    </div>
+                    <div class="CompanyNav">
+                        <img src="../image/Logo.png" alt="">
+                        <label class="companyName">Iconiqlast Studios</label>
+                        <i class="ph-caret-circle-down phIcon"></i>
+                    </div>
+                </nav>
+
+                <div class="divider"></div>
+
+                <div class="jobBody">
+                    
+                    <div class="wrapJob">
+                        <div class="jobBody-header">
+                            <div class="jobWrap">
+                                <i class="ph-triangle phIcon"></i>
+                                <label > Date</label>
+                            </div>
+                            <div class="jobWrap name">
+                                <i class="ph-triangle phIcon"></i>
+                                <label > Name</label>
+                            </div>
+                            <div class="jobWrap Jobposition">
+                                <i class="ph-triangle phIcon"></i>
+                                <label> Position</label>
+                            </div>
+                            <div class="jobWrap">
+                                <i class="ph-triangle phIcon"></i>
+                                <label> Status</label>
+                            </div>
+                            <div>
+                                <i class=" white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div  id="myBtn" class="jobUser violet">
+                        <div class="jobUser-details">
+
+                            <div class="label">
+                                <label for="">Aug. 15, 2022 </label>
+                            </div>
+                            <div class="label name">
+                                <label>Jane Ross</label>
+                            </div>
+                            <div class="label Jobposition">
+                                    <label >Senior Multimedia Artist</label>
+                            </div>
+                            <div class="label status">
+                                <label for="">Regularized</label>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="ph-caret-right white"></i>
+                        </div>
+                    </div>
+                    <div class="jobUser violet">
+                        <div class="jobUser-details">
+                            <div class="label">
+                                <label for="">July. 20, 2022 </label>
+                            </div>
+                            <div class="label name">
+                                <label >Jay Reid  </label>
+                            </div>
+                            <div class="label Jobposition">
+                                <label>Senior Motion Graphic Artist</label>
+                            </div>
+                            <div class="label status">
+                                <label for="">Regularized</label>
+                            </div>
+                        </div>
+                        <i class="ph-caret-right white"></i>
+                    </div>
+                    <div class="jobUser blue">
+                        <div class="jobUser-details">
+
+                            <div class="label">
+                                <label for="">Aug. 15, 2022 </label>
+                            </div>
+                            <div class="label name">
+                                <label>Jane Ross</label>
+                            </div>
+                            <div class="label Jobposition">
+                                    <label >Senior Multimedia Artist</label>
+                            </div>
+                            <div class="label status">
+                                <label for="">Probation</label>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="ph-caret-right white"></i>
+                        </div>
+                    </div>
+
+                    <div class="jobUser blue">
+                        <div class="jobUser-details">
+
+                            <div class="label">
+                                <label for="">Aug. 15, 2022 </label>
+                            </div>
+                            <div class="label name">
+                                <label>Jane Ross</label>
+                            </div>
+                            <div class="label Jobposition">
+                                    <label >Senior Multimedia Artist</label>
+                            </div>
+                            <div class="label status">
+                                <label for="">Probation</label>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="ph-caret-right white"></i>
+                        </div>
+                    </div>
+
+                    <div class="jobUser blue">
+                        <div class="jobUser-details">
+
+                            <div class="label">
+                                <label for="">Aug. 15, 2022 </label>
+                            </div>
+                            <div class="label name">
+                                <label>Jane Ross</label>
+                            </div>
+                            <div class="label Jobposition">
+                                    <label >Senior Multimedia Artist</label>
+                            </div>
+                            <div class="label status">
+                                <label for="">Probation</label>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="ph-caret-right white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+
+                <div class="fileWindow">   
+                    <div class="modal-header">
+                        <div class="posLeft">
+                                <i class="ph-paperclip listICN"></i>
+                                <a>201 Files</a>
+                        </div>
+                        <div class="posRight">
+                            <i class="ph-pencil-line listICN"></i>
+                            <i class="ph-trash listICN"></i>
+                            <span class="closed">&times;</span>
+                        </div>
+                    </div>
+                    <div class="modalBody">
+                        <div class="titlePic">
+                            <img src="../image/Member2.png" alt="">
+                            <a class="Name">Jane Ross</a>
+                            <a class="Position">Senior Multimedia Artist</a>
+                            <div class="tabs">
+                                <button class="tablink" onclick="openPage('EmployeeInfo', this )" id="defaultOpen"><i class="phaddressbook listICN"></i> Employee Info</button>
+                                <button class="tablink" onclick="openPage('PersonalInfo', this )" >Personal Info</button>
+                                <button class="tablink" onclick="openPage('Records', this )">Records</button>
+                            </div>
+                                
+                                <div id="EmployeeInfo" class="tabcontent">
+                                    <div class="posDet">
+                                        <div class="posDet-left">
+                                            <div class="compWrap">
+                                                <img src="../image/Logo.png" alt="">
+                                                <a>Iconiqlast Studios</a>
+                                            </div>
+                                            <div class="posLeft">
+                                                <a>Joined: </a>
+                                                <a>February. 27, 2020</a>
+                                            </div>
+                                            <div class="posLeft">
+                                                <i class="ph-money listICN"></i>
+                                                <a>30,000 - 45,000php</a>
+                                            </div>
+                                            <div class="posLeft">
+                                                <i class="ph-briefcase listICN"></i>
+                                                <a>Fully remote</a>
+                                            </div>
+                                            <div class="posLeft">
+                                                <i class="ph-clock listICN"></i>
+                                                <a>45 Hours Weekly</a>
+                                            </div>
+                
+                                                <div class="posLeft">
+                                                    <i class=" ph-thumbs-up listICN"></i>
+                                                    <a>Benefits</a>
+                                                </div>
+                                                <ul>
+                                                    <li>Free Internet Plan</li>
+                                                    <li>Free Company Phone</li>
+                                                </ul>
+                                        </div>
+                                        <div class="posDet-right">
+                                            <p>Lörem ipsum enkortsdator ångerrösta vulkanresa, kungspudel, för explainer. Mobilblottare flexitarian givomat. 
+                                                Plånboksbröllop julgranssyndrom. Kompetensväxling klimatvänlig möpare trafficking. Coronaanpassa karriärcoach dogmafilm. 
+                                                Snurrmästare klimatflykting säpojogg fjärrnyckel. Medborgarforskning nätläkare social distansering transitflykting pappafeminist.
+                                                Vandrande skolbuss en askstoppad, vinstvarning. Frisparkssprej nätpoker. Du kan vara drabbad. 
+                                            </p>
+                                            <p>
+                                                Göra en labrador 24-timmarsmyndighet antivaxxare robotfälla. Nätdeklarant snippa, dygnis digifysisk. 
+                                                Foliehatt stafettläkare utan normcore än koldioxidsänka, i resultatvarna. Du kan vara drabbad. 
+                                                Preppare wiki halvtaktsjobb. Temakonfirmation rödgrönrosa. Becknarväska R-tal nixa fast lyssna in. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="PersonalInfo" class="tabcontent">
+                                  <div class="persInfoCont">
+                                    <div class="persInfWrap">
+                                        <div class="personaWrap">
+                                            <div class="ennEntry">
+                                                <a class="numEnn">IX</a>
+                                                <a class="labelEnn">Peacemaker</a>
+                                            </div>
+                                            <div class="ennEntry">
+                                                <a class="numEnn">VIII</a>
+                                                <a class="labelEnn">Challenger</a>
+                                            </div>
+                                        </div>
+                                        <div class="personaWrap">
+                                            <div class="ennEntry">
+                                                <a class="titleMbti">INFJ</a>
+                                                <a class="labelMbti">Advocate</a>
+                                            </div>
+                                            <div class="ennEntry">
+                                                <div class="wrapMbti">
+                                                   <a class="orange">Introverted</a>
+                                                   <a class="orangeFade">Feeling</a>
+                                                </div>
+                                                <div class="wrapMbti">
+                                                    <a class="orangeFade1">Intuitive</a>
+                                                    <a class="orange1">Judging</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="personaWrap">
+                                            <div class="discEntry">
+                                                <a >Steadiness</a>
+                                            </div>
+                                            <div class="discEntry">
+                                                <a >Influence</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Name -->
+                                    <div class="persInfoWrap">
+                                        <div class="posLeft">
+                                            <i class="ph-clipboard listICN"></i>
+                                            <a>Name</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Full Name: </a>
+                                            <a>Solomon Cabreza</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Nickname: </a>
+                                            <a>Sol</a>
+                                        </div>
+                                    </div>
+                                    <!-- Contact -->
+                                    <div class="persInfoWrap">
+                                        <div class="posLeft">
+                                            <i class="ph-phone listICN"></i>
+                                            <a>Contact</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Current Address: </a>
+                                            <a>133 JP Rizal st. Cainta, Rizal</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Permanent Addres: </a>
+                                            <a>5007 P. Burgos st. Citadel condominium, Makati, 1210 Metro Manila</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>E-mail: </a>
+                                            <a>mvillaluz008@gmail.com</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Work E-mail: </a>
+                                            <a>migsdesign@iconiqlast.com</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Home Number: </a>
+                                            <a>6550090</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Cellphone Number: </a>
+                                            <a>09171105883</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Emergency Contact: </a>
+                                            <a>Joanna Doe</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Emergency Contact Number: </a>
+                                            <a>09133134293</a>
+                                        </div>
+                                    </div>
+                                    <!-- Biological Info -->
+                                    <div class="persInfoWrap">
+                                        <div class="posLeft">
+                                            <i class="ph-person listICN"></i>
+                                            <a>Biological Info</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Height (cm): </a>
+                                            <a>313</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Weight (cm): </a>
+                                            <a>123</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>blood Type: </a>
+                                            <a>AB</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Gender: </a>
+                                            <a>Male</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Place of Birth: </a>
+                                            <a>Manila</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Father:: </a>
+                                            <a>Jake Jaques Ross</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Mother: </a>
+                                            <a>Janinne Jelle Ross</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Nationality: </a>
+                                            <a>Filipino</a>
+                                        </div>
+                                    </div>
+                                        <!-- Goverment Info -->
+                                    <div class="persInfoWrap">
+                                        <div class="posLeft">
+                                            <i class="ph-hash listICN"></i>
+                                            <a>Goverment IDs</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Tax Identification Number (TIN): </a>
+                                            <a>132 - 123 - 123 </a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>PHILHEALTH Number: </a>
+                                            <a> 123456789012</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Social Security System Number (SSS): </a>
+                                            <a>12 - 1234567 - 89</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>PAG-IBIG Number:</a>
+                                            <a>1234 - 1234 - 1234</a>
+                                        </div>
+                                    </div>
+                                         <!-- Goverment Info -->
+                                    <div class="persInfoWrap">
+                                        <div class="posLeft">
+                                            <i class="ph-question listICN"></i>
+                                            <a>MISC</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Language: </a>
+                                            <a>English, Filipino, Korean</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Religion: </a>
+                                            <a>Agnostic</a>
+                                        </div>
+                                        <div class="posLeft">
+                                            <a>Civil Status: </a>
+                                            <a>Single</a>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div id="Records" class="tabcontent">
+                                    <div class="persInfoCont">
+                                        <div class="posLeft">
+                                            <Label>Notes / Memo:</Label>
+                                        </div>
+                                        <div class="posLeft">
+                                            <p>Lörem ipsum kringmyndighet blippbetalning. Tasigförsamhet nyhetsundvikare,
+                                                digital-tv med ögonkramp.
+                                            </p>
+                                        </div>
+                                        <div class="posLeft">
+                                            <p>
+                                                Klickokrati kalsongbombare digital valuta datalektiker är tobleronepolitik. 
+                                                Reinfeldtare möpare hälsolitteracitet fuldelning andrafiering. Nyhetsundvikare 
+                                            </p>
+                                        </div>
+                                            <ul>
+                                                <li>mansskatt i kreativ skolgång. </li>
+                                                <li>Frisparkssprej tvillingshoppare. </li>
+                                                <li>Robotdräkt närvaropeng men stadsutglesning.</li>
+                                            </ul>
+                                        <div class="persInfoWrap">
+                                            <div class="posLeft">
+                                                <Label>Leaves / Exits:</Label>
+                                            </div>
+                                            <button class="accordion">Section 1</button>
+                                            <div class="panel">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            </div>
+                                            <div class="posLeft">
+                                                <Label>Grievances / Violations:</Label>
+                                            </div>
+                                            <button class="accordion">Section 1</button>
+                                            <div class="panel">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            </div>
+                                            <div class="posLeft">
+                                                <Label>Transactions / Loans:</Label>
+                                            </div>
+                                            <button class="accordion">Section 1</button>
+                                            <div class="panel">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+    <script src="../admin/function/slider.js"></script>
+    <script src="../admin/function/script.js"></script>
+    <script>
+        feather.replace({class:'phIcon', 'stroke-width':16})
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   
+    <script>
+        function openPage(pageName, evt) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+    
+          document.getElementById(pageName).style.display = "flex";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+        </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="image/hris.png" type="image/png">
+      <title>HRIS | Background & Education</title>
+   </head>
+   <link rel="stylesheet" href="css/crud.css">
+   <link rel="stylesheet" href="css/tab.css">
+   <link rel="stylesheet" href="css/navb.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+   <script src="https://unpkg.com/phosphor-icons"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <body>
+      <nav class="sidebar close">
+         <header>
+             <div class="image">
+                 <div class="image">
+                     <img src="image/hris.png" alt="">
+                 </div>
+ 
+                 <div class="logo-text text">
+                     <span class="profession">Hello</span>
+                     <div class="name">Solomon</div>
+                     <div class="name">Cabreza</div>
+                     <span class="profession">Web developer</span>
+                 </div>
+             </div>
+             <i class='ph-caret-right toggle'></i>
+         </header>
+      
+         <div class="menu-bar">
+             <div class="menu">
+                  <a href="home.html" class="title">
+                     <i class="ph-chalkboard icon"></i>
+                     <h5>My dashboard</h5>
+                  </a>
+ 
+                  <button data-toggle="collapse" class="ph-address-book dropdown-btn">Workspace<i class="fa fa-caret-down"></i></button>
+                     <div class="dropdown-container">
+                         <a href="memos.html">Memos & Activity Log</a>
+                         <a href="members.html">Members</a>
+                         <a href="calendar.html">Calendar</a>
+                         <a href="payslip.html">Payslip</a>
+                      </div>
+ 
+                 <button data-toggle="collapse" class="ph-newspaper-clipping dropdown-btn">My Acount<i class="fa fa-caret-down"></i></button>
+                     <div class="dropdown-container">
+                         <a href="account.html">Personal Information</a>
+                         <a href="education.html">Background & Education</a>
+                         <a href="benefits.html">Benefits</a>
+                     </div>
+ 
+                 <button data-toggle="collapse" class="ph-question dropdown-btn">Settings <i class="fa fa-caret-down"></i></button>
+                     <div class="dropdown-container">
+                       <a href="personality.html">Personality Tests</a>
+                       <a href="evaluation.html">Employee Evaluation Index</a>
+                     </div>
+             </div>
+ 
+             <div class="bottom-content">
+                  <div id="txt" class="toggle-switch"></div>
+             </div>
+         </div>
+     </nav>
+      
+      <section class="home">
+         <div id="content">
+            
+         <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="textLabel"><i class="ph-user-circle icon"></i> <a>My Account</a> <i class="ph-caret-double-right icon"></i> <a>Background & Education</a> <i class="ph-caret-circle-down"></i></div>
+               
+               <div class="userInfo">
+                  <div class="info">
+                     <div class="nameInfo">SolCabreza</div>
+                     <div class="company">Iconiqlast</div>
+                     <a class="position">Junior UX / UI Designer</a>
+                  </div>
+                  <div class="userImage">
+                     <img src="image/prof.png" alt="">
+                     <a href="">Settings <i class="ph-gear"></i></a>
+                  </div>
+               </div>
+            </nav>
+         </header>
+
+         <figure class="tabBlock">
+            <ul class="tabBlock-tabs">
+               <li class="tabBlock-tab is-active"><i class="ph-bank"></i> Credentials</li>
+               <li class="tabBlock-tab"><i class="ph-computer-tower"></i> Record</li>
+               <li class="tabBlock-tab"><i class="ph-list-dashes"></i></li>
+            </ul>
+            <div class="tabBlock-content">
+               <!--Name Information-->
+               <div class="tabBlock-content">
+                  <!--Name Information-->
+                  <div class="tabBlock-pane">
+                     <div class="top">
+                        <div class="groupRow">
+                           <div class="formGroup">
+                              <select>
+                                 <option value="" disabled selected>Select</option>
+                                 <option value="">samp1</option>
+                                 <option value="">samp2</option>
+                                 <option value="">samp3</option>
+                                 <option value="">samp4</option>
+                              </select>
+                              <span>Academic Title</span>
+                           </div>
+                           <div class="formGroup">
+                              <input type="text" required="">
+                              <span>Major</span>
+                           </div>
+                           <div class="groupForm">
+                              <input type="text" required="">
+                              <span>Course</span>
+                           </div>
+                           <div class="groupForm">
+                              <input type="text" required="">
+                              <span>School</span>
+                           </div>
+                           <div class="formGroup">
+                              <input type="text" required="">
+                              <span>Year</span>
+                           </div>
+                           <span class="ph-plus add"></span>
+                        </div>
+                     </div>
+                     <!-- <div class="groupForm" id="servers_modal">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Academic Title</th>
+                                <th>Major</th>
+                                <th>Course</th>
+                                <th>School</th>
+                                <th>Year</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody id="servers_table" runat="server" ClientIDMode="static" data-delete="">
+                            <tr id="server_0">
+                                <td>Blah</td>
+                                <td>Blah</td>
+                                <td>Blah</td>
+                                <td>Blah</td>
+                                <td>Blah</td>
+                                <td class="crud">
+                                     <a class="add" title="Add" data-toggle="tooltip"><i class="fa fa-check"></i></a> 
+                                    <a class="edit icons" title="Edit" data-toggle="tooltip"><i data-feather="edit-2"></i></a>
+                                    <a class="add" title="Add" data-toggle="tooltip"><i data-feather="trash"></i></a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                        -->
+                     <div class="line"></div>
+                     <label style="float:left; width:1200px; margin-bottom: 20px;">Lisences</label>
+                     <div class="top">
+                        <div class="groupRow">
+                           <div class="nameCol">
+                              <div class="nameSec">
+                                 <span>Name</span>
+                              </div>
+                              <div class="nameSec">
+                                 <input type="text" required=""> 
+                              </div>
+                           </div>
+                           <div class="dateCol">
+                              <div class="dateSec">
+                                 <span>Date Taken</span>
+                              </div>
+                              <div class="groupRow">
+                                 <div class="formGroup">
+                                    <input type="text" required="">
+                                    <span>Month</span>
+                                 </div>
+                                 <div class="formGroup">
+                                    <input type="text" required="">
+                                    <span>Day</span>
+                                 </div>
+                                 <div class="formGroup">
+                                    <input type="text" required="">
+                                    <span>Year</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <span class="ph-plus add"></span>
+                        </div>
+                     </div>
+                     <label style="float:left; width:1200px; margin-bottom: 20px;">Certificate</label>
+                     <div class="top">
+                        <div class="groupRow">
+                           <div class="nameCol">
+                              <div class="nameSec">
+                                 <span>Name</span>
+                              </div>
+                              <div class="nameSec">
+                                 <input type="text" required=""> 
+                              </div>
+                           </div>
+                           <div class="dateCol">
+                              <div class="dateSec">
+                                 <span>Date Taken</span>
+                              </div>
+                              <div class="groupRow">
+                                 <div class="formGroup">
+                                    <input type="text" required="">
+                                    <span>Month</span>
+                                 </div>
+                                 <div class="formGroup">
+                                    <input type="text" required="">
+                                    <span>Day</span>
+                                 </div>
+                                 <div class="formGroup">
+                                    <input type="text" required="">
+                                    <span>Year</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <span class="ph-plus add"></span>
+                        </div>
+                     </div>
+                     <div class="line"></div>
+                     <div class="top">
+                        <div class="groupRow">
+                           <div class="nameCol">
+                              <div class="nameSec">
+                                 <span>Name</span>
+                              </div>
+                              <div class="nameSec">
+                                 <input type="text" required=""> 
+                              </div>
+                           </div>
+                           <div class="dateCol">
+                              <div class="dateSec">
+                                 <span>Date Taken</span>
+                              </div>
+                              <div class="groupRow">
+                                 <div class="formGroup">
+                                    <input type="text" required="">
+                                    <span>Month</span>
+                                 </div>
+                                 <div class="formGroup">
+                                    <input type="text" required="">
+                                    <span>Day</span>
+                                 </div>
+                                 <div class="formGroup">
+                                    <input type="text" required="">
+                                    <span>Year</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <span class="ph-plus add"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tabBlock-content">
+                  <div class="tabBlock-pane">
+                     <label style="float:left; width:1039px; margin-bottom: 20px;">Employment</label>
+                     <div class="employment">
+                        <label>Company</label>
+                        <label>Position</label>
+                        <label>Year</label>
+                        <i data-feather="edit-2" class="size-18"><a></a></i>
+                     </div>
+
+                     <div class="line"></div>
+                     <label style="float:left; width:1039px; margin-bottom: 20px;">Character Reference</label>
+                     <div class="employment">
+                        <label>Name</label>
+                        <label>Company</label>
+                        <label>Position</label>
+                        <i data-feather="edit-2" class="size-18"><a></a></i>
+                     </div>
+
+                     <div class="line"></div>
+                     <label style="float:left; width:1039px; margin-bottom: 20px;">Dependents</label>
+                        <div class="employment">
+                              <label>Name</label>
+                              <label>Relationship</label>
+                              <label>Birthday</label>
+                              <i data-feather="edit-2" class="size-18"><a></a></i>
+                        </div>
+                  </div>
+               </div>
+               <div class="tabBlock-content">
+                  <div class="tabBlock-pane">
+                     <div class="line"></div>
+                     <div class="">SolCabreza</div>
+                     <div class="">Iconiqlast</div>
+                     <div class="line"></div>
+                  </div>
+               </div>
+         </figure>
+         </div>
+      </section>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="function/calendar.js"></script>
+      <script src="function/script.js"></script>
+      <script src="function/nav.js"></script>
+      <script src="function/crud.js"></script>
+      <script>
+         feather.replace()
+      </script>
+      <!-- <script>
+         $(document).ready(function() {
+             var i = 1;
+         $('.add').on('click', function() {
+             var field = '<div class="groupRow"><div class="formGroup"><select><option value="" disabled selected>Select</option><option value="">samp1</option><option value="">samp2</option><option value="">samp3</option><option value="">samp4</option></select><span>Academic Title</span></div><div class="formGroup"><input type="text" required=""><span>Nickname</span></div><div class="groupForm"><input type="text" required=""><span>Nickname</span></div><div class="groupForm"><input type="text" required=""><span>Nickname</span></div></div>';
+             $('.appending_div').append(field);
+             i = i+1;
+         })
+         })
+         </script> -->
+   </body>
+</html>

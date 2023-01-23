@@ -1,0 +1,467 @@
+.formRequest{
+    display: flex;
+    flex-direction: row;
+}
+.accessSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    width: 260px;
+    height: 580px;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-right: 1.5px solid #2B3991;
+    padding-right: 35px;
+}
+
+.searchTerms {
+    border: none;
+    margin-top:5px;
+    width: 90%;
+    background: transparent;
+}
+input:focus{
+    outline: none;
+}
+.searchs i{
+    color: 1px solid #C2C2C2;
+}
+
+.searchs{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #C2C2C2;
+    padding: 3.5px;
+    border-radius: 5px;
+    height: 30px;
+}
+.Boxsearch{
+    width: 100%;
+}
+
+.topWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    width: 260px;
+}
+
+.companyCard{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #252525;
+    border-radius: 8px;
+    align-items: center;
+    padding: 10px 0px;
+}
+.cardTitle{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 9px;
+    gap: 8px;
+    width: 240px;
+    border-bottom: 0.5px solid #FCFCFC;
+    margin-bottom: 4px;
+}
+
+.cardTitle label{
+    padding: 10px;
+    gap: 10px;
+    background:  #FCFCFC;
+    border-radius: 13px;
+    color:#FF9000;
+}
+.subCard{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: #FCFCFC;
+    height: 20px;
+    width: 220px;
+    align-items: center;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.numSub{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FCFCFC;
+}
+
+.labelSub{
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    color: #FCFCFC;
+}
+
+.subCard:hover{
+    background: #FF9000;
+}
+
+.bottomCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 8px;
+    width: 100%;
+    color: #2B3991;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+.TopcontGrid{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    cursor: pointer;
+    padding: 0px 15px;
+}
+.edBTn{
+    box-sizing: border-box;
+
+/* Auto layout */
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 10px;
+    gap: 8px;
+    align-items: center;
+    background: #2B3991;
+    border-radius: 8px;
+    color: #FCFCFC;
+}
+.edBTn:hover{
+/* Auto layout */
+    color: #FCFCFC;
+}
+.addEntry{
+    color: #2B3991;
+    box-sizing: border-box;
+
+/* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 8px;
+}
+
+
+.grid-container {
+    display: grid;
+    gap: 12px 12px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #FF9000;
+    width: 310px;
+    height: 105px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #FCFCFC;
+}
+
+.gridWrapTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.gridWrapTop label{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    border-bottom: 1px solid #FCFCFC;
+    width: 170px;
+}
+
+.iconGrid{
+    width: 15px;
+    cursor: pointer;
+}
+
+.gridWrapBot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.gridWrapBot a{
+    text-align: center;
+    width: 40px;
+    padding: 2px;
+    background: #FCFCFC;
+    border-radius: 13px;
+    font-weight: 600;
+    font-size: 8px;
+    color: #FF9000;
+    cursor: pointer;
+}
+
+.accessSideRight{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  background: #ff9000;
+  border-radius: 8px;
+}
+.accordion.active {
+  border: none;
+  border-radius: 8px 8px 0 0;
+}
+
+.uName {
+  padding: 10px 40px;
+  background: #fcfcfc;
+  border-radius: 8px;
+  color: #ff9000;
+  width: 50px;
+}
+
+.panel {
+  background-color: #ff9000;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  border-radius: 0 0 8px 8px;
+  width: 100%;
+}
+
+.panelWrap {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.navAccordian {
+  display: flex;
+  flex-direction: column;
+  color: #fcfcfc;
+  width: 160px;
+  padding: 15px;
+  border-right: 1px solid #fcfcfc;
+  border-bottom: 1px solid #fcfcfc;
+}
+.nav-item {
+  box-sizing: border-box;
+  padding: 10px 0px 10px 0px;
+  cursor: pointer;
+  width: 100%;
+  text-align: end;
+  text-decoration: none;
+  color: #fcfcfc;
+}
+.nav-item.active {
+  border-bottom: 1px solid #fcfcfc;
+}
+
+.accordionWrap {
+  display: none;
+}
+
+#visibility.accordionWrap,
+#scheduled.accordionWrap,
+#access.accordionWrap {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #ff9000;
+  border-bottom: 1px solid #fcfcfc;
+  color: #fcfcfc;
+}
+
+.schedWrap,
+.treeWrap {
+  display: none;
+}
+
+#userSched.schedWrap,
+#adminSched.schedWrap,
+#user.treeWrap,
+#admin.treeWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #ff9000;
+  height: 275px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 1px solid #c2c2c2;
+  border-radius: 4px;
+  accent-color: #34495e;
+}
+
+.tree.two {
+  margin-top: 40px;
+}
+.tree ul {
+  position: relative;
+  overflow: hidden;
+  padding-left: 2rem;
+  list-style: none;
+}
+.tree ul ul > li {
+  position: relative;
+}
+.tree ul ul > li::before {
+  position: absolute;
+  bottom: 100%;
+  left: -1.6rem;
+  display: block;
+  width: 1.2rem;
+  height: 100%;
+  margin-bottom: -0.5rem;
+  content: " ";
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+.schedbtn,
+.userbtn {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 200px;
+  padding: 10px;
+  background: transparent;
+  text-decoration: none;
+  color: #fcfcfc;
+}
+.schedbtn.active,
+.userbtn.active {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 200px;
+  padding: 10px;
+  background: #fcfcfc;
+  color: #ff9000;
+}
+.schedbtn:hover,
+.userbtn:hover {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 200px;
+  padding: 10px;
+  background: #fcfcfc;
+  color: #ff9000;
+}
+
+
+.permission {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  cursor: pointer;
+  justify-content: space-around;
+  color: #ff9000;
+}
+
+.ui.dropdown {
+  max-width: 420px;
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.selection.dropdown .menu {
+    max-height: 16.02857142rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .ui.selection.dropdown .menu {
+    max-height: 12.0214285763rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .ui.selection.dropdown .menu {
+    max-height: 16.02857143rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .ui.selection.dropdown .menu {
+    max-height: 21.37142857rem;
+  }
+}
+
+.ui.label > a {
+  background: #ff9000;
+  border-radius: 21px;
+  color: white;
+}
+.ui.label > a:hover {
+  background: #ff9000;
+  border-radius: 21px;
+  color: white;
+}
+.dateCont {
+  border-bottom: 1px solid #fcfcfc;
+}
+.dateHeader {
+  display: flex;
+  flex-direction: row;
+  width: 245px;
+  padding: 10px;
+  gap: 5px;
+}
+.dateWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.date {
+  font-weight: 700;
+  font-size: 21px;
+  margin: 0px;
+}
+.iconDate {
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.schedCont {
+  padding: 20px;
+}
+
+#div2{
+  display: none;
+}
+
+
+.wrapView{
+  width:100%;
+}
+
+

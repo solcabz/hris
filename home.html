@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HRIS | Dashboard</title>
+    <!-- <link rel="icon" type="image/x-icon" href="img/hricon.ico"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/navb.css">
+    <link rel="stylesheet" href="css/homes.css">
+    <link rel="icon" href="image/hris.png" type="image/png">
+
+     <!-- Glyp from git cdn JS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+     <script src="https://unpkg.com/phosphor-icons"></script>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body >
+    <nav class="sidebar close">
+        <header>
+            <div class="image">
+                <div class="image">
+                    <img src="image/hris.png" alt="">
+                </div>
+
+                <div class="logo-text text">
+                    <span class="profession">Hello</span>
+                    <div class="name">Solomon</div>
+                    <div class="name">Cabreza</div>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+            <i class='ph-caret-right toggle'></i>
+        </header>
+     
+        <div class="menu-bar">
+            <div class="menu">
+                <a href="home.html" class="title">
+                    <i class="ph-chalkboard icon"></i>
+                    <h5>My dashboard</h5>
+                </a>
+
+                <button data-toggle="collapse" class="ph-address-book dropdown-btn">Workspace<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="memos.html">Memos & Activity Log</a>
+                        <a href="members.html">Members</a>
+                        <a href="calendar.html">Calendar</a>
+                        <a href="payslip.html">Payslip</a>
+                     </div>
+
+                <button data-toggle="collapse" class="ph-newspaper-clipping dropdown-btn">My Acount<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="account.html">Personal Information</a>
+                        <a href="education.html">Background & Education</a>
+                        <a href="benefits.html">Benefits</a>
+                    </div>
+
+                <button data-toggle="collapse" class="ph-question dropdown-btn">Settings <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                      <a href="personality.html">Personality Tests</a>
+                      <a href="evaluation.html">Employee Evaluation Index</a>
+                    </div>
+            </div>
+
+            <div class="bottom-content">
+                 <div id="txt" class="toggle-switch"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="textLabel"><i class="ph-chalkboard icon"></i><a> Dashboard Sidebar</a></div>
+                <div class="userInfo">
+                    <div class="info">
+                        <div class="nameInfo">SolCabreza</div>
+                        <div class="company">Iconiqlast</div>
+                        <div class="position">Junior UX / UI Designer</div>
+                    </div>
+                    <div class="userImage">
+                        <img src="image/prof.png" alt="">
+                        <a href="">Settings <i class="ph-gear"></i></a>
+                    </div>
+                 </div> 
+            </nav>
+
+            <div class="minNotification">
+                <div>
+                    <a> <i class="ph-trophy icn"></i> 1 Year Anniversary: Jane Doe, John Whoa, Mike Bike</a>
+                    <a> <i class="ph-cake icn"></i> Birthday: Mon Deey, Esther Heggs</a>
+                </div>
+            </div>
+
+             <div class="line"></div> 
+
+                <!-- <h2>Lorem Ipsum Dolor</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <div class="line"></div> -->
+
+            <div class="contFile">
+
+                <div class="wrapCont">
+                    <div class="meetingEntry">
+                        <div class="offChart">
+                            <div class="chartLeft">
+                                <i class="ph-bed detIcon"></i>
+                                <p>Time off</p>
+                                <p>14</p>
+                                <label>Available days</label>
+                            </div>
+                            <div class="chartRight">
+                                <div class="rightUp">
+                                    <i class="ph-plus detIcon"></i>
+                                </div>
+                                <div class="rightDown">
+                                <p>2</p>
+                                <label>taken</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="holidayChart">
+                            <div class="chartLeft">
+                                <i class="ph-snowflake detIcon"></i>
+                                <p>Holidays</p>
+                                <p>13</p>
+                                <label>Available days</label>
+                            </div>
+                            <div class="holidayRight">
+                                <div class="rightUp">
+                                    <i class="ph-question detIcon"></i>
+                                </div>
+                                <div class="downWrapHol">
+                                    <div class="rightDown">
+                                        <p>3</p>
+                                        <label>This Month</label>
+                                    </div>
+                                    <div class="rightDown">
+                                        <p>2</p>
+                                        <label>taken</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnDash">
+                        <a href="#"><i class="ph-caret-double-right"></i> View Calendar</a>
+                    </div>
+                </div>
+
+                <div class="wrapCont">
+                    <div class="meetingEntry">
+                        <div class="meetingWrap">
+                            <div class="iconMeeting">
+                                <p>June</p>
+                                <p>30</p>
+                            </div>
+                            <div class="meetingBody">
+                                <p>Weekly Stand-up</p>
+                                <p>Tuesday | 9:00am</p>
+                            </div>
+                            <div class="iconBTN">
+                                <i class="ph-caret-double-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnDash">
+                        <a href="#"><i class="ph-caret-double-right"></i> View Calendar</a>
+                    </div>
+                </div>
+
+                <div class="halfwrapCont">
+                    <div class="topCont">
+                        <div class="recentWrap">
+                            <label>Recent Contacts</label>
+                            <div class="recentMember">
+                                <img src="image/prof.png">
+                                <img src="image/prof.png">
+                                <img src="image/prof.png">
+                            </div>
+                        </div>
+                        <div class="availableWrap">
+                            <label>Available</label>
+                            <div class="avMember">
+                                <img src="image/prof.png">
+                                <img src="image/prof.png">
+                                <img src="image/prof.png">
+                            </div>
+                        </div>
+                        <div class="offWrap">
+                            <label>Away / Time Off </label>
+                            <div class="awayMember">
+                                <img src="image/prof.png">
+                                <img src="image/prof.png">
+                                <img src="image/prof.png">
+                            </div>
+                        </div>
+                        <div class="btnDash">
+                            <a href="#"><i class="ph-caret-double-right"></i> View Members</a>
+                        </div>
+                    </div>
+                    <div class="botCont">
+                        <div class="activityWrap">
+                            <i data-feather="sunrise" class="icofeathers"></i>
+                            <p>Tuesday, July. 11 2022
+                                4:00pm</p>
+                        </div>
+                        <div class="hourSched">
+                            <p>7 / 8 hrs left</p>
+                        </div>
+                        <div class="btnDash">
+                            <a href="#"><i class="ph-caret-double-right"></i> View Activity Log</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapCont">
+                    <div class="meetingEntry">
+                        <div class="payslipEntry">
+                            <div class="date active">
+                                <label >June</label>
+                                <p style="font-size: 21px">30</p>
+                            </div>
+                            <div class="payslipInfo">
+                                <div class="infoHeader active">
+                                    <div class="totalHours">
+                                        <p>140 / 140</p>
+                                        <label>Total Hours</label>
+                                    </div>
+                                    <div class="offsetHours">
+                                        <p>16</p>
+                                        <label>Offset Hours</label>
+                                    </div>
+                                </div>
+                                <div class="infoFooter active">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payslipEntry">
+                            <div class="date inactive">
+                                <label >June</label>
+                                <p style="font-size: 21px">15</p>
+                            </div>
+                            <div class="payslipInfo">
+                                <div class="infoHeader inactive">
+                                    <div class="totalHours">
+                                        <p>140 / 140</p>
+                                        <label>Total Hours</label>
+                                    </div>
+                                    <div class="offsetHours">
+                                        <p>16</p>
+                                        <label>Offset Hours</label>
+                                    </div>
+                                </div>
+                                <div class="infoFooter inactive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnDash">
+                        <a href="#"><i class="ph-caret-double-right"></i> View Payslip</a>
+                    </div>
+                </div>
+
+                <div class="wrapCont">
+                    <div class="persInfWrap">
+                        <div class="personaWrap">
+                            <div class="ennEntry">
+                                <p class="numEnn">IX</p>
+                                <p class="labelEnn">Peacemaker</p>
+                            </div>
+                            <div class="ennEntry">
+                                <p class="numEnn">VIII</p>
+                                <p class="labelEnn">Challenger</p>
+                            </div>
+                        </div>
+                        <div class="personaWrap">
+                            <div class="ennEntry">
+                                <p class="titleMbti">INFJ</p>
+                                <p class="labelMbti">Advocate</p>
+                            </div>
+                            <div class="ennEntry">
+                                <div class="wrapMbti">
+                                   <p class="orange">Introverted</p>
+                                   <p class="orangeFade">Feeling</p>
+                                </div>
+                                <div class="wrapMbti">
+                                    <p class="orangeFade1">Intuitive</p>
+                                    <p class="orange1">Judging</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personaWrap">
+                            <div class="discEntry">
+                                <p>Steadiness</p>
+                            </div>
+                            <div class="discEntry">
+                                <p >Influence</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnDash">
+                        <a href="#"><i class="ph-caret-double-right"></i> View Calendar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="function/nav.js"></script>
+    <script>
+        feather.replace()
+    </script>
+    <script>
+        const element = document.querySelector(".contFile");
+        element.addEventListener('wheel', (event) => {
+        event.preventDefault();
+
+        element.scrollBy({
+            left: event.deltaY < 0 ? -30 : 30,
+            
+        });
+        });
+    </script>
+</body>
+</html>

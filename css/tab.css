@@ -1,0 +1,257 @@
+ .group::after, .tabBlock-tabs::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px
+  }
+
+   ol, ul {
+    margin-bottom: 1.25rem;
+    margin-top: 0;
+  }
+  
+  ol, ul {
+    padding: 0;
+    margin-left: 1.25rem;
+  }
+  
+  .unstyledList, .tabBlock-tabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tabBlock {
+    margin: 2.5rem;
+  }
+
+  .tabBlock-tab {
+    float: left;
+  }
+ 
+  .tabBlock-tab {
+    background-color: #1D75BD;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    height: 30px;
+    color:#fdfdfd;
+    border-radius: 5px 5px 0px 0px;
+    line-height: 5px;
+    padding: 15px 0px;
+    -webkit-transition: 0.1s ease-in-out;
+            transition: 0.1s ease-in-out;
+  }
+   
+ 
+  .tabBlock-tab::before, .tabBlock-tab::after {
+    display: block;
+    height: 4px;
+    position: absolute;
+    -webkit-transition: 0.1s ease-in-out;
+            transition: 0.1s ease-in-out;
+  }
+ 
+  .tabBlock-tab.is-active {
+    position: relative;
+    color: #1D75BD;
+    background: #fdfdfd;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    z-index: 1;
+  } 
+
+  h5{
+    font-size: 0.83em;
+  }
+  
+  .tabBlock-pane > :last-child {
+    margin-bottom: 0;
+  }
+  
+  .tabBlock-pane{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    padding: 50px 0;
+    /* position: absolute; */
+    background: #fdfdfd;
+    /* HRIS - Drop Shadow */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.21);
+    border-radius: 8px;
+  }
+
+  .tabBlock-tab {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  
+
+
+    /*Form Design in account  */
+    .form-group {
+      position: relative;
+      width: 250px;
+      gap:50px;
+    }
+    .form-group select{
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      outline: none;
+      color: #1D75BD;
+      font-size: 1em;
+      transition: 0.5s;
+    }
+
+    .form-group input{
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      outline: none;
+      color: #1D75BD;
+      font-size: 1em;
+      transition: 0.5s;
+    }
+    .form-group span {
+      position: absolute;
+      left: 0;
+      padding: 10px;
+      pointer-events: none;
+      font-size: 1em;
+      color: teal;
+      text-transform: uppercase;
+      transition: 0.5s;
+    }
+    .form-group input:valid ~ span,
+    .form-group input:focus ~ span {
+      color: teal;
+      transform: translateX(10px) translateY(-7px);
+      font-size: 0.65em;
+      padding: 0 10px;
+      background: #fafafa;
+      border-left: 1px solid #1D75BD;
+      border-right: 1px solid #1D75BD;
+      letter-spacing: 0.2em;
+    }
+
+    .form-group input:valid,
+    .form-group input:focus {
+      border: 1px solid #1D75BD;
+    }
+
+    .form-group select:valid ~ span,
+    .form-group select:focus ~ span {
+      color: teal;
+      transform: translateX(10px) translateY(33px);
+      font-size: 0.65em;
+      padding: 0 10px;
+      background: #fafafa;
+      border-left: 1px solid #1D75BD;
+      border-right: 1px solid #1D75BD;
+      letter-spacing: 0.2em;
+    }
+    
+    .form-group select:valid,
+    .form-group select:focus {
+      border: 1px solid #1D75BD;
+    }
+
+
+    .groupRow{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 50px;
+    }
+
+    .groupCol{
+      width:520px;
+      display: flex;
+      align-items: left;
+      justify-content: center;
+      flex-direction: column;
+      gap: 50px;
+    }
+    
+    .groupCol input{
+      width:520px;
+    }
+    
+    .bioRow { 
+      width: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 50px;
+    }
+    .bioRow input{ 
+      width: 220px;
+    }
+  
+    /* date css design */
+    .dateCol{
+      width:520px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .dateSec select{
+      padding: 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      outline: none;
+      color: #1D75BD;
+      font-size: 1em;
+      transition: 0.5s;
+    }
+
+    .dateSec input{
+      width: 120px;
+      padding: 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      outline: none;
+      color: #1D75BD;
+      font-size: 1em;
+      transition: 0.5s;
+    }
+
+    .dateSec span {
+        color: teal;
+        letter-spacing: 0.2em;
+        padding-top: 5px;
+        height: 20px;
+    }
+  
+
+    .employment{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      background: #F5F5F5;
+      padding: 20px 0;
+      width: 1039px;
+      height: 250px;
+    }
+    
+
+    .size-18{
+      width: 16px;
+      height: 16px;
+      float: right;
+      color:#1D75BD;
+      fill: #1D75BD;
+      }

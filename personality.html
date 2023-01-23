@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/hris.png" type="image/png">
+    <title>HRIS | Personality Test</title>
+</head>
+    <link rel="stylesheet" href="css/PrsTest.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/navb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image">
+                <div class="image">
+                    <img src="image/hris.png" alt="">
+                </div>
+
+                <div class="logo-text text">
+                    <span class="profession">Hello</span>
+                    <div class="name">Solomon</div>
+                    <div class="name">Cabreza</div>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+            <i class='ph-caret-right toggle'></i>
+        </header>
+     
+        <div class="menu-bar">
+            <div class="menu">
+                <a href="home.html" class="title">
+                    <i class="ph-chalkboard icon"></i>
+                    <h5>My dashboard</h5>
+                </a>
+
+                <button data-toggle="collapse" class="ph-address-book dropdown-btn">Workspace<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="memos.html">Memos & Activity Log</a>
+                        <a href="members.html">Members</a>
+                        <a href="calendar.html">Calendar</a>
+                        <a href="payslip.html">Payslip</a>
+                     </div>
+
+                <button data-toggle="collapse" class="ph-newspaper-clipping dropdown-btn">My Acount<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="account.html">Personal Information</a>
+                        <a href="education.html">Background & Education</a>
+                        <a href="benefits.html">Benefits</a>
+                    </div>
+
+                <button data-toggle="collapse" class="ph-question dropdown-btn">Settings <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                      <a href="personality.html">Personality Tests</a>
+                      <a href="evaluation.html">Employee Evaluation Index</a>
+                    </div>
+            </div>
+
+            <div class="bottom-content">
+                 <div id="txt" class="toggle-switch"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="textLabel"><i class="ph-flask icon"></i> <a>Questionnaires</a> <i class="ph-caret-double-right icon"></i> <a>Personality Test</a> <i class="ph-caret-circle-down ph-lg"></i></div>
+
+                <div class="userInfo">
+                <div class="info">
+                    <div class="nameInfo">SolCabreza</div>
+                    <div class="company">Iconiqlast</div>
+                    <a class="position">Junior UX / UI Designer</a>
+                </div>
+                <div class="userImage">
+                    <img src="image/prof.png" alt="">
+                    <a href="">Settings <i class="ph-gear"></i></a>
+                </div>
+                </div>
+            </nav>
+
+            <figure class="tabBlock">
+                <ul class="tabBlock-tabs">
+                    <li class="tabBlock-tab is-active"><i data-feather="pie-chart"></i> Enegram</li>
+                    <li class="tabBlock-tab"><i class="ph-person-simple-walk"></i> TAPT</li>
+                    <li class="tabBlock-tab"><i class="ph-puzzle-piece"></i> DISC</li>
+                    <li class="tabBlock-tab"><i class="ph-lightning"></i> MIQR</li>
+                    <li class="tabBlock-tab"><i class="ph-palette"></i> Color</li>
+                    <li class="tabBlock-tab"><i class="ph-graph"></i> VAK</li>
+                    <li class="tabBlock-tab"><i class="ph-list-dashes"></i></li>
+                </ul>
+    
+                <div class="tabBlock-content">
+                    <!--Enegram-->
+                    <div class="tabBlock-pane">
+                        <div class="enegramFrame">
+                            <div class="eneCont">
+                                <div class="imageCont">
+                                    <img src="image/Art.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="titleHead one">
+                                        <label>Type 9: Peacekeeper</label>
+                                    </div>
+                                    <div class="bodyCont blue">
+                                        <p>Lörem ipsum kostymrasist syl, neskap. Rektig. Podat ten trekroren beliga har krokronade. Mahysibel van. Geocaching vakaligen för att nyst i sobel. Kronon reledes. </p>
+                                        <div class="subCont">
+                                            <li>Pleasant, Peaceful</li>
+                                            <li>Spaced-out, Forgetful</li>
+                                            <div class="more">
+                                                <i class="ph-dots-three-circle"></i>
+                                                <a> more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="eneCont">
+                                <div class="imageCont">
+                                    <img src="image/Art2.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="titleHead two">
+                                        <label>Type 8: Asserter</label>
+                                    </div>
+                                    <div class="bodyCont orange">
+                                        <p>Lörem ipsum kostymrasist syl, neskap. Rektig. Podat ten trekroren beliga har krokronade. Mahysibel van. Geocaching vakaligen för att nyst i sobel. Kronon reledes. </p>
+                                        <div class="subCont">
+                                            <li>Pleasant, Peaceful</li>
+                                            <li>Spaced-out, Forgetful</li>
+                                            <div class="more">
+                                                <i class="ph-dots-three-circle"></i>
+                                                <a> more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="eneCont">
+                                <div class="imageCont">
+                                    <img src="image/Art3.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="titleHead three">
+                                        <label>Type 8: Asserter</label>
+                                    </div>
+                                    <div class="bodyCont yellow">
+                                        <p>Lörem ipsum kostymrasist syl, neskap. Rektig. Podat ten trekroren beliga har krokronade. Mahysibel van. Geocaching vakaligen för att nyst i sobel. Kronon reledes. </p>
+                                        <div class="subCont">
+                                            <li>Pleasant, Peaceful</li>
+                                            <li>Spaced-out, Forgetful</li>
+                                            <div class="more">
+                                                <i class="ph-dots-three-circle"></i>
+                                                <a> more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+
+                        </div>
+                        <div class=bottomEne>
+                            <div><i class="ph-circle-wavy-question"></i><a> View Results</a></div>
+                            <div><i data-feather="edit"></i><a> Take Test</a></div>
+                        </div>
+                    </div>   
+
+                    <!--Tapt-->
+                    <div class="tabBlock-pane">
+                        <div class="taptFrame">
+                            <div class="taptPic">
+                                <img src="image/manMask.png">
+                            </div>
+                            <div class="taptInfo">
+                                <div class="taptHeader three">
+                                    <a>(INFJ) Introverted, Intuitive, Feeling, Judging</a>
+                                </div>
+                                <div class="taptBody yellow">
+                                    <p>Lörem ipsum kostymrasist syl, neskap. Rektig. Podat ten trekroren beliga har krokronade. Mahysibel van. Geocaching vakaligen för att nyst i sobel. Kronon reledes</p>
+                                    <div class="subCont">
+                                        <li>Pleasant, Peaceful</li>
+                                        <li>Spaced-out, Forgetful</li>
+                                        <div class="more">
+                                            <i class="ph-dots-three-circle"></i>
+                                            <a> more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=bottomEne>
+                            <div><i class="ph-circle-wavy-question"></i><a> View Results</a></div>
+                            <div><i data-feather="edit"></i><a> Take Test</a></div>
+                        </div>
+                    </div>  
+
+                    <!--DISC-->
+                    <div class="tabBlock-pane">
+                        <div class="taptFrame">
+                            <div class="taptPic">
+                                <img src="image/discBlue.png">
+                            </div>
+                            <div class="taptInfo">
+                                <div class="taptHeader one">
+                                    <a>(INFJ) Introverted, Intuitive, Feeling, Judging</a>
+                                </div>
+                                <div class="taptBody blue">
+                                    <p>Lörem ipsum kostymrasist syl, neskap. Rektig. Podat ten trekroren beliga har krokronade. Mahysibel van. Geocaching vakaligen för att nyst i sobel. Kronon reledes</p>
+                                    <div class="subCont ">
+                                        <li>Pleasant, Peaceful</li>
+                                        <li>Spaced-out, Forgetful</li>
+                                        <div class="more">
+                                            <i class="ph-dots-three-circle"></i>
+                                            <a> more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="taptFrame">
+                            <div class="taptPic">
+                                <img src="image/discOrange.png">
+                            </div>
+                            <div class="taptInfo">
+                                <div class="taptHeader two">
+                                    <a>(INFJ) Introverted, Intuitive, Feeling, Judging</a>
+                                </div>
+                                <div class="taptBody orange">
+                                    <p>Lörem ipsum kostymrasist syl, neskap. Rektig. Podat ten trekroren beliga har krokronade. Mahysibel van. Geocaching vakaligen för att nyst i sobel. Kronon reledes</p>
+                                    <div class="subCont ">
+                                        <li>Pleasant, Peaceful</li>
+                                        <li>Spaced-out, Forgetful</li>
+                                        <div class="more">
+                                            <i class="ph-dots-three-circle"></i>
+                                            <a> more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=bottomEne>
+                            <div><i class="ph-circle-wavy-question"></i><a> View Results</a></div>
+                            <div><i data-feather="edit"></i><a> Take Test</a></div>
+                        </div>           
+                    </div>  
+
+                    <!--MIQR-->
+                    <div class="tabBlock-pane">
+                        <div class="enegramFrame">
+                            <div class="eneCont">
+                                <div class="imageCont">
+                                    <img src="image/miqrBlue.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="titleHead one">
+                                        <label>Type 9: Peacekeeper</label>
+                                    </div>
+                                    <div class="bodyCont blue">
+                                        <p>Lörem ipsum kostymrasist syl, neskap. Rektig. Podat ten trekroren beliga har krokronade. Mahysibel van. Geocaching vakaligen för att nyst i sobel. Kronon reledes. </p>
+                                        <div class="subCont">
+                                            <li>Pleasant, Peaceful</li>
+                                            <li>Spaced-out, Forgetful</li>
+                                            <div class="more">
+                                                <i class="ph-dots-three-circle"></i>
+                                                <a> more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="eneCont">
+                                <div class="imageCont">
+                                    <img src="image/miqrOrange.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="titleHead two">
+                                        <label>Type 8: Asserter</label>
+                                    </div>
+                                    <div class="bodyCont orange">
+                                        <p>Lörem ipsum kostymrasist syl, neskap. Rektig. Podat ten trekroren beliga har krokronade. Mahysibel van. Geocaching vakaligen för att nyst i sobel. Kronon reledes. </p>
+                                        <div class="subCont">
+                                            <li>Pleasant, Peaceful</li>
+                                            <li>Spaced-out, Forgetful</li>
+                                            <div class="more">
+                                                <i class="ph-dots-three-circle"></i>
+                                                <a> more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="eneCont">
+                                <div class="imageCont">
+                                    <img src="image/miqrYellow.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="titleHead three">
+                                        <label>Type 8: Asserter</label>
+                                    </div>
+                                    <div class="bodyCont yellow">
+                                        <p>Lörem ipsum kostymrasist syl, neskap. Rektig. Podat ten trekroren beliga har krokronade. Mahysibel van. Geocaching vakaligen för att nyst i sobel. Kronon reledes. </p>
+                                        <div class="subCont">
+                                            <li>Pleasant, Peaceful</li>
+                                            <li>Spaced-out, Forgetful</li>
+                                            <div class="more">
+                                                <i class="ph-dots-three-circle"></i>
+                                                <a> more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            
+                        </div>
+                        <div class=bottomEne>
+                            <div><i class="ph-circle-wavy-question"></i><a> View Results</a></div>
+                            <div><i data-feather="edit"></i><a> Take Test</a></div>
+                        </div>
+                        
+                    </div>  
+
+                    <!--Color-->
+                    <div class="tabBlock-pane">
+                        <div class="taptFrame">
+                            <div class="taptPic">
+                                <img src="image/VRglasses.png">
+                            </div>
+                            <div class="taptInfo">
+                                <div class="taptHeader one">
+                                    <a>(INFJ) Introverted, Intuitive, Feeling, Judging</a>
+                                </div>
+                                <div class="taptBody blue">
+                                    <p>Lörem ipsum kostymrasist syl, neskap. Rektig. Podat ten trekroren beliga har krokronade. Mahysibel van. Geocaching vakaligen för att nyst i sobel. Kronon reledes</p>
+                                    <div class="subCont">
+                                        <li>Pleasant, Peaceful</li>
+                                        <li>Spaced-out, Forgetful</li>
+                                        <div class="more">
+                                            <i class="ph-dots-three-circle"></i>
+                                            <a> more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=bottomEne>
+                            <div><i class="ph-circle-wavy-question"></i><a> View Results</a></div>
+                            <div><i data-feather="edit"></i><a> Take Test</a></div>
+                        </div>
+                    </div>  
+
+                    <!--VAK-->
+                    <div class="tabBlock-pane">
+                        <div class="taptFrame">
+                            <div class="taptPic">
+                                <img src="image/Girlrunning.png">
+                            </div>
+                            <div class="taptInfo">
+                                <div class="taptHeader two">
+                                    <a>(INFJ) Introverted, Intuitive, Feeling, Judging</a>
+                                </div>
+                                <div class="taptBody orange">
+                                    <p>Lörem ipsum kostymrasist syl, neskap. Rektig. Podat ten trekroren beliga har krokronade. Mahysibel van. Geocaching vakaligen för att nyst i sobel. Kronon reledes</p>
+                                    <div class="subCont">
+                                        <li>Pleasant, Peaceful</li>
+                                        <li>Spaced-out, Forgetful</li>
+                                        <div class="more">
+                                            <i class="ph-dots-three-circle"></i>
+                                            <a> more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=bottomEne>
+                            <div><i class="ph-circle-wavy-question"></i><a> View Results</a></div>
+                            <div><i data-feather="edit"></i><a> Take Test</a></div>
+                        </div>
+                    </div>  
+
+                    <!--Enegram-->
+                    <div class="tabBlock-pane">
+    
+                        
+                    </div>  
+                </div>
+        </div>
+    </section>
+    <script>
+        feather.replace()
+     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="function/script.js"></script>
+    <script src="function/nav.js"></script>
+</body>
+</html>

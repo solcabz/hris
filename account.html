@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/hris.png" type="image/png">
+    <title>HRIS | Account Settings</title>
+</head>
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/navb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image">
+                <div class="image">
+                    <img src="image/hris.png" alt="">
+                </div>
+
+                <div class="logo-text text">
+                    <span class="profession">Hello</span>
+                    <div class="name">Solomon</div>
+                    <div class="name">Cabreza</div>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+            <i class='ph-caret-right toggle'></i>
+        </header>
+     
+        <div class="menu-bar">
+            <div class="menu">
+                <a href="home.html" class="title">
+                    <i class="ph-chalkboard icon"></i>
+                    <h5>My dashboard</h5>
+                </a>
+
+                <button data-toggle="collapse" class="ph-address-book dropdown-btn">Workspace<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="memos.html">Memos & Activity Log</a>
+                        <a href="members.html">Members</a>
+                        <a href="calendar.html">Calendar</a>
+                        <a href="payslip.html">Payslip</a>
+                     </div>
+
+                <button data-toggle="collapse" class="ph-newspaper-clipping dropdown-btn">My Acount<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="account.html">Personal Information</a>
+                        <a href="education.html">Background & Education</a>
+                        <a href="benefits.html">Benefits</a>
+                    </div>
+
+                <button data-toggle="collapse" class="ph-question dropdown-btn">Settings <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                      <a href="personality.html">Personality Tests</a>
+                      <a href="evaluation.html">Employee Evaluation Index</a>
+                    </div>
+            </div>
+
+            <div class="bottom-content">
+                 <div id="txt" class="toggle-switch"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="text"><i class="ph-user-circle icon"></i> <a>My Account</a> <i class="ph-caret-double-right icon"></i> <a> Info</a> <i class="ph-caret-circle-down ph-lg"></i></div>
+                
+                <div class="userInfo">
+                    <div class="info">
+                        <div class="nameInfo">SolCabreza</div>
+                        <div class="company">Iconiqlast</div>
+                        <a class="position">Junior UX / UI Designer</a>
+                    </div>
+                    <div class="userImage">
+                        <img src="image/prof.png" alt="">
+                        <a href="">Settings <i class="ph-gear"></i></a>
+                    </div>
+                 </div> 
+            </nav>
+
+             
+            <figure class="tabBlock">
+            <ul class="tabBlock-tabs">
+                <li class="tabBlock-tab is-active"><i class="ph-clipboard"></i> Name</li>
+                <li class="tabBlock-tab"><i class="ph-phone"></i> Contact Details</li>
+                <li class="tabBlock-tab"><i class="ph-person"></i> Biological Info</li>
+                <li class="tabBlock-tab"><i class="ph-hash"></i> Goverment IDs</li>
+                <li class="tabBlock-tab"><i class="ph-question"></i> Misc</li>
+                <li class="tabBlock-tab"><i class="ph-list-dashes"></i></li>
+            </ul>
+
+            <div class="tabBlock-content">
+                <!--Name Information-->
+                <div class="tabBlock-pane">
+
+                    <div class="groupRow">
+                        <div class="form-group">
+                            <input type="text" required="required">
+                            <span>First Name</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" required="required">
+                            <span>Middle Name</span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" required="required">
+                            <span>Last Name</span>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="groupRow">
+                        <div class="form-group">
+                            <select>
+                                <option value="" disabled selected>Select your option</option>
+                                <option value="">samp1</option>
+                                <option value="">samp2</option>
+                                <option value="">samp3</option>
+                                <option value="">samp4</option>
+                            </select>
+                            <span>Academic Title</span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" required="">
+                            <span>Nickname</span>
+                        </div>
+                    </div>   
+                </div>
+
+                <!--Contact Details -->
+
+                <div class="tabBlock-pane">
+                    
+                    <div class="groupCol">
+                        <div class="form-group">
+                            <input type="text" required=""> 
+                            <span>Current Address</span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" required=""> 
+                            <span>Permanent Address</span>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="groupRow">
+                        <div class="form-group">
+                            <input type="text" required="required">
+                            <span>Home Number</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" required="required">
+                            <span>Phone Number</span>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="groupRow">
+                        <div class="form-group">
+                            <input type="text" required="required">
+                            <span>Email Address</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" required="required">
+                            <span>Work Email</span>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="groupRow">
+                        <div class="form-group">
+                            <input type="text" required="required">
+                            <span>Contact Person</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" required="required">
+                            <span>Emergency Contact Number</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biological Info -->
+                <div class="tabBlock-pane">
+
+                    <div class="bioRow">
+                        <div class="form-group">
+                            <input type="text" required="">
+                            <span>Height</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" required="">
+                            <span>Weight</span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" required="">
+                            <span>Blood Type</span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" required="">
+                            <span>Gender</span>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+                    
+                    <div class="groupCol">
+                        <div class="form-group">
+                            <input type="text" required=""> 
+                            <span>Place of Birth</span>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="dateCol">
+                        <div class="dateSec">
+                            <select id="month"></select>
+                            <select id="day"></select>
+                            <select id="year"></select>
+                        </div>
+                        <div class="dateSec">
+                            <span>Date of Birth</span>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="groupRow">
+                        <div class="form-group">
+                            <input type="text" required="">
+                            <span>Father</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" required="">
+                            <span>Mother</span>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="groupRow">
+                        <div class="form-group">
+                            <input class="nationality" type="text" required="">
+                            <span>Nationality</span>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="groupRow">
+                        <div class="form-group">
+                            <input class="nationality" type="text" required="">
+                            <span>Nationality</span>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="groupRow">
+                        <div class="form-group">
+                            <input class="nationality" type="text" required="">
+                            <span>Nationality</span>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="groupRow">
+                        <div class="form-group">
+                            <input class="nationality" type="text" required="">
+                            <span>Nationality</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Goverment ID's-->
+                <div class="tabBlock-pane">
+
+                    <div class="dateCol">
+                        <div class="dateSec">
+                            <input maxlength="2"> -
+                            <input maxlength="7"> -
+                            <input maxlength="2">
+                        </div>
+                        <div class="dateSec">
+                            <span>Social Secutity ID (SSS)</span>
+                        </div>
+                    </div>
+            
+                    <div class="line"></div>
+
+                    <div class="dateCol">
+                        <div class="dateSec">
+                            <input maxlength="4"> -
+                            <input maxlength="4"> -
+                            <input maxlength="4">
+                        </div>
+                        <div class="dateSec">
+                            <span>Pag-Ibig Number</span>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="dateCol">
+                        <div class="dateSec">
+                            <input maxlength="3"> -
+                            <input maxlength="3"> -
+                            <input maxlength="3">
+                        </div>
+                        <div class="dateSec">
+                            <span>Tax Identification Number (TIN)</span>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="dateCol">
+                        <div class="dateSec">
+                            <input maxlength="2"> -
+                            <input maxlength="9"> -
+                            <input maxlength="1">
+                        </div>
+                        <div class="dateSec">
+                            <span>Philhealth Number</span>
+                        </div>
+                    </div>
+                </div>    
+                <!-- Misc-->
+                <div class="tabBlock-pane">
+                    
+                    <div class="groupCol">
+                        <div class="form-group">
+                            <input type="text" required=""> 
+                            <span>Languages</span>
+                        </div>
+                    </div>
+                    
+                    <div class="line"></div>
+
+                    <div class="groupRow">
+                        <div class="form-group">
+                            <input type="text" required="">
+                            <span>Religion</span>
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option value="" disabled selected>Select your option</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                            <span>Gender</span>
+                        </div>
+                    </div>   
+                </div>
+                <!-- All -->
+                <div class="tabBlock-pane">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Minima mollitia tenetur nesciunt modi?</li>
+                        <li>Id sint fugit et sapiente.</li>
+                        <li>Nam deleniti libero obcaecati pariatur.</li>
+                        <li>Nemo optio iste labore similique?</li>
+                    </ul>
+                </div>
+            </div>
+            </figure> 
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="function/calendar.js"></script>
+    <script src="function/script.js"></script>
+    <script src="function/nav.js"></script>
+    </body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/hris.png" type="image/png">
+    <title>HRIS | Evaluation</title>
+</head>
+    <link rel="stylesheet" href="css/PrsTest.css">
+    <link rel="stylesheet" href="css/navb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image">
+                <div class="image">
+                    <img src="image/hris.png" alt="">
+                </div>
+
+                <div class="logo-text text">
+                    <span class="profession">Hello</span>
+                    <div class="name">Solomon</div>
+                    <div class="name">Cabreza</div>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+            <i class='ph-caret-right toggle'></i>
+        </header>
+     
+        <div class="menu-bar">
+            <div class="menu">
+                <a href="home.html" class="title">
+                    <i class="ph-chalkboard icon"></i>
+                    <h5>My dashboard</h5>
+                </a>
+
+                <button data-toggle="collapse" class="ph-address-book dropdown-btn">Workspace<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="memos.html">Memos & Activity Log</a>
+                        <a href="members.html">Members</a>
+                        <a href="calendar.html">Calendar</a>
+                        <a href="payslip.html">Payslip</a>
+                     </div>
+
+                <button data-toggle="collapse" class="ph-newspaper-clipping dropdown-btn">My Acount<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                        <a href="account.html">Personal Information</a>
+                        <a href="education.html">Background & Education</a>
+                        <a href="benefits.html">Benefits</a>
+                    </div>
+
+                <button data-toggle="collapse" class="ph-question dropdown-btn">Settings <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                      <a href="personality.html">Personality Tests</a>
+                      <a href="evaluation.html">Employee Evaluation Index</a>
+                    </div>
+            </div>
+
+            <div class="bottom-content">
+                 <div id="txt" class="toggle-switch"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="textLabel"><i class="ph-flask icon"></i> <a>Questionnaires</a> <i class="ph-caret-double-right icon"></i> <a>Employee Evaluation</a> <i class="ph-caret-circle-down ph-lg"></i></div>
+
+                <div class="userInfo">
+                <div class="info">
+                    <div class="nameInfo">SolCabreza</div>
+                    <div class="company">Iconiqlast</div>
+                    <a class="position">Junior UX / UI Designer</a>
+                </div>
+                <div class="userImage">
+                    <img src="image/prof.png" alt="">
+                    <a href="">Settings <i class="ph-gear"></i></a>
+                </div>
+                </div>
+            </nav>
+
+                <form action="">
+                    
+                    <div class="form active">
+                        <h1><i class='ph-chart-bar'></i> Employee Evaluation Index</h1>
+                        <div class="entry">
+                            <div class="question">
+                                <label >I personally agree with the Vision and Mission of the Company</label>
+                            </div>
+                            <div class="answer">
+                                <div class="field radio">
+                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="StronglyAgree">Strongly Agree</label>
+                                    <span></span>
+                                </div>
+                                <div class="field radio">
+                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="Agree">Agree</label>
+                                    <span></span>
+                                </div>
+                                <div class="field radio">
+                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="Disagree">Disagree</label>
+                                    <span></span>
+                                </div>
+                                <div class="field radio">
+                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="StronglyDisagree">Strongly Disagree</label>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <h1><i class='bx bx-user-plus'></i> <span>Employee Evaluation Index</span></h1>
+                        <div class="entry">
+                            <div class="question">
+                                <img src="image/graphPaint.png" alt="">
+                            </div>
+                            <div class="answer">
+                                <div class="field">
+                                    <select id="Company" name="Company" class="effect-7" type="text" required>
+                                        <option value="" disabled selected hidden>Company</option>
+                                        <option value="Iconiqlast">Iconiqlast</option>
+                                        <option value="Shopia">Shopia</option>
+                                      </select>
+                                    <span></span>
+                                </div>
+                                <div class="field">
+                                    <select id="Company" name="Company" class="effect-7" type="text" required>
+                                        <option value="" disabled selected hidden>Department</option>
+                                        <option value="QST">QST</option>
+                                        <option value="QST1">QST1</option>
+                                      </select>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="form">
+                        <h1><i class='bx bx-user-plus'></i> <span>Employee Evaluation Index</span></h1>
+                        <div class="field">
+                            <label for="password">Password</label>
+                            <input type="password" placeholder="password">
+                            <span></span>
+                        </div>
+                        <div class="field">
+                            <label for="password">Confirm-Password</label>
+                            <input type="password" placeholder="confirm password">
+                            <span></span>
+                        </div> 
+                    </div>-->
+                    <!-- <div class="form">
+                        <div class="field">
+                            <label for="DOB">Date of birth</label>
+                            <input type="date">
+                            <span></span>
+                        </div>
+                        <div class="field">
+                            <label for="image">Picture</label>
+                            <input type="file">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <div class="field">
+                            <label for="DOB">Date of birth</label>
+                            <input type="date">
+                            <span></span>
+                        </div>
+                        <div class="field">
+                            <label for="image">Picture</label>
+                            <input type="file">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <div class="field">
+                            <label for="DOB">Date of birth</label>
+                            <input type="date">
+                            <span></span>
+                        </div>
+                        <div class="field">
+                            <label for="image">Picture</label>
+                            <input type="file">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <div class="field">
+                            <label for="DOB">Date of birth</label>
+                            <input type="date">
+                            <span></span>
+                        </div>
+                        <div class="field">
+                            <label for="image">Picture</label>
+                            <input type="file">
+                            <span></span>
+                        </div>
+                    </div> -->
+                    
+                    <div class="form">
+                        <h1><i class='bx bx-user-plus'></i> <span>Employee Evaluation Index</span></h1>
+
+                        <div class="entry">
+                            <div class="question">
+                                <img src="image/high-five.png">
+                            </div>
+                            <div class="answer">
+                                <div class="infos">
+                                    <h1>Thank You!</h1>
+                                    <a><i data-feather="chevrons-left"></i>Back to Home</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page-indicator">
+                        <!-- <em class="active"></em>
+                        <em></em>
+                        <em></em>
+                        <em></em> -->
+                    </div>
+                
+                        <button class="btnPrv">Previous</button>
+                        <button class="btnPrv">Next</button>
+                  
+                </form>
+        </div>
+    </section>    
+
+    <script>
+        feather.replace()
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="function/script.js"></script>
+    <script src="function/nav.js"></script>
+    <script src="function/main.js"></script>
+</body>
+</html>

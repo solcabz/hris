@@ -1,0 +1,492 @@
+p{
+    margin: 0px;
+}
+.icn{
+    color: #FF9000;
+    font-size: 18px;
+}
+
+.minNotification a{
+    margin-left: 25px;
+}
+
+.wrapCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 260px;
+    height: 534px;
+    background: #FCFCFC;
+    /* HRIS - Drop Shadow */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.21);
+    border-radius: 21px;
+    gap: 10px;
+}
+
+.halfwrapCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 260px;
+    background: #FCFCFC;
+    border-radius: 21px;
+    gap: 10px;
+}
+
+.topCont{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.21);
+    height: 344px;
+    width: 100%;
+    border-radius: 21px;
+    padding: 0px 15px;
+}
+.botCont{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.21);
+    height: 220px;
+    width: 260px;
+    border-radius: 21px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    gap: 20px;
+}
+
+.contFile{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    overflow: scroll;
+    overflow-y: hidden;
+    padding: 20px;
+}
+.contFile::-webkit-scrollbar{
+    height: 10px;              
+  width: 10px;               
+}
+.contFile::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    width:10px;
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1D75BD;
+    border-radius: 50px;
+  }
+
+.offChart{
+    display: flex;
+    flex-direction: row;
+    color: #FFBD98;
+    width: 100%;
+    height: 120px;
+}
+
+.chartLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 30%;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+.detIcon{
+    font-size: 24px;
+}
+.chartLeft p{
+    margin: 0px;
+}
+
+.chartLeft label{
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    
+}
+
+.chartRight{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFBD98;
+    width: 50%;
+    border-radius: 0px 8px 8px 0px;
+    color: #FCFCFC;
+    gap: 8px;
+    padding: 0px 10px;
+}
+
+.rightUp{
+    padding: 8px;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.rightDown{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    gap: 5px;
+}
+.rightDown p{
+    margin: 0px;
+}
+
+.rightDown label{
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.holidayChart{
+    display: flex;
+    flex-direction: row;
+    color: #BAD6ED;
+    width: 100%;
+    height: 120px;
+}
+.holidayRight{
+    display: flex;
+    flex-direction: column;
+    background-color: #BAD6ED;
+    width: 50%;
+    border-radius: 0px 8px 8px 0px;
+    color: #FCFCFC;
+    gap: 8px;
+    padding: 0px 10px;
+}
+.downWrapHol{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.persInfWrap{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .personaWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 114px;
+  }
+  .ennEntry{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.labelEnn{
+    padding: 10px;
+    width: 100%;
+    background: #BAD6ED;
+    color:#FCFCFC ;
+    border-radius: 0px 8px 8px 0px;
+}
+.numEnn{
+    color: #BAD6ED;
+    text-align: center;
+    width: 40px;
+    padding: 10px;
+}
+.labelMbti{
+    padding: 10px;
+    width: 100%;
+    background: #FFBD98;
+    border-radius: 0px 8px 8px 0px;
+    color: #FCFCFC;
+}
+.titleMbti{
+    width: 80px;
+    color: #FFBD98;
+    text-align: center;
+    padding: 10px;
+}
+.wrapMbti{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.wrapMbti p{
+    font-size: 8px;
+    padding: 3px;
+}
+
+.orangeFade{
+    background-color: #FFBD98;
+    color: white;
+    border-radius: 0px 0px 0px 8px;
+}
+.orangeFade1{
+    background-color: #FFBD98;
+    color: white;
+    border-radius: 0px 8px 0px 0px;
+}
+.orange{
+    background-color: #FF9000;
+    color: white;
+    border-radius: 8px 0px 0px 0px;
+}
+.orange1{
+    background-color: #FF9000;
+    color: white;
+    border-radius: 0px 0px 8px 0px;
+}
+.discEntry{
+    padding: 10px;
+    width: 100;
+    background: #FFD577;
+    border-radius: 8px;
+    text-align: center;
+    color: #FCFCFC;
+}
+.payslipEntry{
+    display:flex;
+    flex-direction: row;
+    height: 110px;
+   width: 100%;
+}
+.payslipInfo{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    color: #FFBD98;
+}
+.infoHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #f1efef;
+    height: 76px;
+    background:  #E06625;
+    border-radius: 0px 8px 0px 0px;
+}
+.infoFooter{
+    height: 34px;
+    border-radius: 0px 0px 8px 0px;
+}
+.totalHours,
+.offsetHours{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+}
+.totalHours p, 
+.offsetHours p{
+    font-weight: 600;
+    border-bottom: 1px solid #f1efef;
+    margin: 0;
+    padding: 15px 0px;
+}
+
+.totalHours label, 
+.offsetHours label{
+    font-weight: 600;
+    font-size: 8px;
+}
+
+.infoHeader.active{
+    background:  #E06625;
+}
+.date.active{
+    color: #FFBD98;
+}
+
+.infoFooter.active{
+    background:  #FFBD98;
+}
+
+.infoHeader.inactive{
+    background:  #FFC645;
+}
+
+.date.inactive{
+    color: #FFD577;
+}
+.infoFooter.inactive{
+    background:  #FFD577;
+}
+.meetingEntry{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    gap: 10px;
+} 
+.meetingWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 260px;
+    height: 80px;
+    padding: 0px 10px;
+}
+
+.iconBTN{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    color: #FFD577;
+}
+.iconMeeting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    color: #FFD577;
+}
+.meetingBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    background: #FFD577;
+    border-radius: 0px 8px 8px 0px; 
+    color:#FCFCFC ;
+}
+
+.offWrap{
+    display: flex;
+    flex-direction: column;
+    color: #E06625;
+    padding: 15px;
+    gap: 15px;
+}
+.availableWrap{
+    display: flex;
+    flex-direction: column;
+    color: #9CA3AF;
+    padding: 15px;
+    gap: 15px;
+}
+.recentWrap{
+    display: flex;
+    flex-direction: column;
+    color: #BAD6ED;
+    padding: 15px;
+    gap: 10px;
+}
+.recentMember{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 10px;
+    gap: 8px;
+    height: 36px;
+    background: #BAD6ED;
+    border-radius: 100px;
+}
+
+.awayMember{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 10px;
+    gap: 8px;
+    height: 36px;
+    background: #E06625;
+    border-radius: 100px;
+}
+
+.avMember{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 10px; 
+    gap: 8px;
+    height: 36px;
+    background: #9CA3AF;
+    border-radius: 100px;
+}
+.awayMember img{
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+
+}
+.avMember img{
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+}
+.recentMember img{
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+}
+.activityWrap{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.activityWrap p{
+    padding: 10px;
+    color: #FFD577;
+}
+
+.icofeathers{
+    width: 40px;
+    height: 40px;
+    color: #FFD577;
+}
+.hourSched{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 50px;
+    background: #FFD577;
+    border-radius: 8px;
+    color: #FCFCFC;
+    align-items: center;
+    justify-content: center;
+}
+.btnDash{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+.btnDash a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 8px;
+    color: #1D75BD;
+    padding: 10px;
+    gap: 8px;
+}
+.btnDash i{
+    height: 5px;
+}

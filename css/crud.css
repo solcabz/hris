@@ -1,0 +1,169 @@
+
+.groupForm {
+    position: relative;
+    width: 220px;
+    gap:80px;
+  }
+
+  .formGroup {
+    position: relative;
+    width: 140px;
+    gap:80px;
+  }
+
+  .formGroup select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    outline: none;
+    color: #1D75BD;
+    font-size: 1em;
+    transition: 0.5s;
+  }
+
+  .groupForm input{
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    outline: none;
+    color: #1D75BD;
+    font-size: 1em;
+    transition: 0.5s;
+  }
+
+  .formGroup input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    outline: none;
+    color: #1D75BD;
+    font-size: 1em;
+    transition: 0.5s;
+  }
+
+  .groupForm span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: teal;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+
+  .formGroup span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: teal;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+
+  .formGroup input:valid ~ span,
+  .formGroup input:focus ~ span {
+    color: teal;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #fafafa;
+    border-left: 1px solid #1D75BD;
+    border-right: 1px solid #1D75BD;
+    letter-spacing: 0.2em;
+  }
+
+  .groupForm input:valid ~ span,
+  .groupForm input:focus ~ span {
+    color: teal;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #fafafa;
+    border-left: 1px solid #1D75BD;
+    border-right: 1px solid #1D75BD;
+    letter-spacing: 0.2em;
+  }
+
+  .formGroup input:valid,
+  .foformGroup input:focus {
+    border: 1px solid #1D75BD;
+  }
+
+  .formGroup select:valid ~ span,
+  .formGroup select:focus ~ span {
+    color: teal;
+    transform: translateX(10px) translateY(33px);
+    font-size: 0.45em;
+    padding: 0 10px;
+    background: #fafafa;
+    border-left: 1px solid #1D75BD;
+    border-right: 1px solid #1D75BD;
+    letter-spacing: 0.2em;
+  }
+
+  .groupForm select:valid ~ span,
+  .formGgroupFormroup select:focus ~ span {
+    color: teal;
+    transform: translateX(10px) translateY(33px);
+    font-size: 0.45em;
+    padding: 0 10px;
+    background: #fafafa;
+    border-left: 1px solid #1D75BD;
+    border-right: 1px solid #1D75BD;
+    letter-spacing: 0.2em;
+  }
+  
+  
+  .formGroup select:valid,
+  .formGroup select:focus {
+    border: 1px solid #1D75BD;
+  }
+
+
+  .groupRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+
+  .top{
+    margin-bottom: 40px;
+  }
+
+  .icons{
+    font-size: 12.58px;
+  }
+
+.nameCol{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+  .nameSec input{
+    width: 477px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    outline: none;
+    color: #1D75BD;
+    font-size: 1em;
+    transition: 0.5s;
+  }
+
+  .nameSec span {
+    color: teal;
+    letter-spacing: 0.2em;
+    padding-top: 5px;
+    height: 20px;
+}

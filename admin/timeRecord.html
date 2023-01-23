@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HRIS Admin Daily Time Record</title>
+    <!-- <link rel="icon" type="image/x-icon" href="img/hricon.ico"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../image/hris.png" type="image/png">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../admin/css/navb.css">
+    <link rel="stylesheet" href="../admin/css/dates.css">
+    <link rel="stylesheet" href="../admin/css/scroll.css">
+    <link rel="stylesheet" href="../admin/css/calendar.css">
+
+     <!-- Glyp from git cdn JS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+     <script src="https://unpkg.com/phosphor-icons"></script>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+
+<body>
+    <nav class="sidebar close">
+
+        <header>
+            <div class="image">
+                <div class="image">
+                    <img src="../image/hris.png" alt="">
+                </div>
+
+                <div class="logo-text text">
+                    <span class="profession">Hello</span>
+                    <div class="name">Solomon</div>
+                    <div class="name">Cabreza</div>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+            <i class='ph-caret-right toggle'></i>
+        </header>
+     
+        <div class="menu-bar">
+            <div class="menu">
+                <div class="title">
+                    <i class="ph-chalkboard icon"></i>
+                    <h5>Admin Dashboard<h5>
+                </div>
+
+                    <button data-toggle="collapse" class="ph-address-book dropdown-btn">Manges <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="request.php">Personnel Request</a>
+                            <a href="timeRecord.html">Daily Time Record</a>
+                            <a href="jobInfo.html">Job Info</a>
+                        </div>
+
+                    <button data-toggle="collapse" class="ph-newspaper-clipping dropdown-btn">Reports <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="201files.html">201 Files</a>
+                            <a href="retention.php">Retention Report</a>
+                            </div>
+
+                    <button data-toggle="collapse" class="ph-list-plus dropdown-btn">Data Tables <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="dataTable.html">Profile</a>
+                            <a href="#">Management</a>
+                            <a href="#">Upkeep</a>
+                        </div>
+
+                    <button data-toggle="collapse" class="ph-gear dropdown-btn">Settings <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-container">
+                            <a href="system.phpp">System Access</a>
+                            <a href="#">User List</a>
+                        </div>
+            </div>
+
+            <div class="bottom-content">
+                <div id="txt" class="toggle-switch"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="textLabel"><i class="ph-chalkboard icon"></i><a>Admin | Daily Time Record</a></div>
+                <div class="userInfo">
+                    <div class="info">
+                        <div class="nameInfo">SolCabreza</div>
+                        <div class="company">Iconiqlast</div>
+                        <div class="position">Junior UX / UI Designer</div>
+                    </div>
+                    <div class="userImage">
+                        <img src="../image/prof.png" alt="">
+                        <a href="">Settings <i class="ph-gear"></i></a>
+                    </div>
+                </div> 
+            </nav>
+
+            <div class="formDate">
+                <div class="timeRecord">
+                    <h1></h1>
+                    <div class="dateReqWrap">
+                        <a><i  class="ph-clock-clockwise"></i> View Time Off / Overtime</a>
+                        <a><i data-feather="calendar" class="feather-16"></i> View Schedule</a>
+                    </div>
+                    <div class="dateBot">
+                        
+                        <nav class="tabdate">
+                            <a  class="nav-item" href="#pending">Pending</a>
+                            <a   class="nav-item" href="#approved">Approved</a>
+                            <a  class="nav-item" href="#denied">Denied</a>
+                        </nav>
+
+                        <!-- PENDING -->
+                        <div class="entryRequest hidden" id="pending" >
+                            <div class="entriesOT">
+                                <div class="entryWrap">
+                                    <label for="">OT</label>
+                                    <div class="btnWrap">
+                                        <a class="nameRequest">Request from: Michael Mike</a>
+                                        <a class="btnView">view...</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entriesOT">
+                                <div class="entryWrap">
+                                    <label for="">OT</label>
+                                    <div class="btnWrap">
+                                        <a class="nameRequest">Request from: Michael Mike</a>
+                                        <a class="btnView">view...</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entriesOFF">
+                                <div class="entryWrap">
+                                    <label for="">OFF</label>
+                                    <div class="btnWrap">
+                                        <a class="nameRequest">Request from: Michael Mike</a>
+                                        <a class="btnView">view...</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entriesOFF">
+                                <div class="entryWrap">
+                                    <label for="">OFF</label>
+                                    <div class="btnWrap">
+                                        <a class="nameRequest">Request from: Michael Mike</a>
+                                        <a class="btnView">view...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- APPROVED -->
+                        <div class="entryRequest hidden" id="approved" >
+                            <div class="entriesOFF">
+                                <div class="entryWrap">
+                                    <label for="">OFF</label>
+                                    <div class="btnWrap">
+                                        <a class="nameRequest">Request from: Michael Mike</a>
+                                        <a class="btnView">view...</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entriesOFF">
+                                <div class="entryWrap">
+                                    <label for="">OFF</label>
+                                    <div class="btnWrap">
+                                        <a class="nameRequest">Request from: Michael Mike</a>
+                                        <a class="btnView">view...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- DENIED -->
+                        <div class="entryRequest hidden" id="denied" >
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar"></div>
+                <div class="calendarWrap">
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="../admin/function/navtabs.js"></script>
+    <script src="../admin/function/calendar.js"></script>
+    <script src="../admin/function/slider.js"></script>
+    <script src="../admin/function/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+     <script>
+       $(".nav-item").click(function() {
+     $('.entryRequest').hide();
+     $(".nav-item").removeClass("active");
+     $(this).addClass("active");
+     $(this.getAttribute('href')).fadeIn(650);
+     return false;
+   });
+    </script> 
+</body>
+</html>

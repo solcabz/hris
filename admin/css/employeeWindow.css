@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: 'Montserrat';
+}
+.fileWindow{
+    margin: auto;
+    padding: 25px;
+    width: 830px;
+    background: #6672BF;
+    /* HRIS - Drop Shadow */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.21);
+    border-radius: 13px;
+}
+.modal-header {
+    justify-content: space-between;
+    height: 21px;
+    display: flex;
+    flex-direction: row;
+    padding: 25px 16px;
+    color: white;
+}
+.posLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 21px;
+    gap: 10px;
+}
+.posRight{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 21px;
+    gap: 10px;
+    color: #6672BF;
+}
+.posRight i{
+    color: #fcfcfc;
+}
+.posLeft a{
+    font-size: 14px;
+}
+.listICN{
+    width: 21px;
+    height: 21px;
+    font-size: 21px;
+    color: #fcfcfc;
+    background: transparent;
+}
+.modalBody{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.titlePic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+    color: #fcfcfc;
+}
+.titlePic img{
+    width: 150px;
+    height: 150px;
+}
+.titlePic .Name{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 55px;
+}
+.titlePic .Position{
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 55.5px;
+}
+.navbar-fixed {
+    position: fixed;
+    top: 3em;
+}
+
+.tabs {
+margin-bottom: 62px;
+
+}
+
+/* Style the buttons inside the tab */
+.tabs button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    color:white;
+    width: 240px;
+    height: 30px;
+    border-bottom: 1px solid #fcfcfc;
+    margin: 0px 15px;
+}
+
+/* Change background color of buttons on hover */
+.tabs button:hover {
+    background-color: white;
+    color: #6672BF;
+    border-radius: 8px;
+}
+
+/* Create an active/current tablink class */
+.tabs button.defaultOpen {
+    background-color: white;
+    color: #6672BF;
+    border-radius: 8px;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 15px;
+    border-top: none;
+    width: 100%;
+}
+.posLeft{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 21px;
+  gap: 10px;
+}
+.posRight{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 21px;
+  gap: 10px;
+  color: #6672BF;
+}
+.posRight i{
+  color: #fcfcfc;
+}
+.posRight a{
+  justify-content: center;
+  align-items: center;
+  padding: 0px 5px;
+  gap: 10px;
+  background: #FFFFFF;
+  border-radius: 13px;
+  font-size: 14px;
+}
+.posLeft a{
+  font-size: 14px;
+}
+.listICN{
+  width: 21px;
+  height: 21px;
+  font-size: 21px;
+  color: #fcfcfc;
+}
+.posDet{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+}
+.posDet-right{
+  width: 450px;
+  color: #fcfcfc;
+}
+
+.posDet-right{
+  width: 480px;
+  color: #fcfcfc;
+  padding: 0px 30px;
+  border-left: 1px solid #fcfcfc;
+}
+
+.posDet-left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 10px;
+  gap: 40px;
+  color: #fcfcfc;
+  width: 260px;
+}
+.compWrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.compWrap img{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 30px;
+height: 30px;
+}
+.compWrap a{
+justify-content: center;
+align-items: center;
+padding: 7px;
+gap: 10px;
+width: 150px;
+background: #FF9000;
+border-radius: 13px;
+}
+.persInfoCont{
+display: flex;
+flex-direction: column;
+width: 100%;
+padding: 35px;
+gap: 41.7px;
+}
+.persInfoWrap{
+display: flex;
+flex-direction: column;
+border-top: 1px solid #fcfcfc;
+width: 100%;
+gap: 10px;
+padding-top: 40px;
+}
+.persInfWrap{
+display: flex;
+flex-direction: row; 
+justify-content: space-around;
+width: 100%;
+}
+.personaWrap{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+width: 180px;
+height: 114px;
+}
+.accordion {
+background-color: transparent;
+color: white;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+transition: 0.4s;
+}
+
+.active, .accordion:hover {
+background-color: white; 
+color: #6672BF;
+}
+
+.panel {
+padding: 0 18px;
+display: none;
+background-color: white;
+overflow: hidden;
+}
+
+.panel p{
+background-color: white;
+color: #6672BF;
+}
+.ennEntry{
+display: flex;
+flex-direction: row;
+width: 180px;
+
+}
+.labelEnn{
+padding: 10px;
+width: 130px;
+background: #BAD6ED;
+border-radius: 0px 8px 8px 0px;
+}
+.numEnn{
+text-align: center;
+width: 40px;
+padding: 10px;
+}
+.discEntry{
+padding: 10px;
+width: 180px;
+background: #FFD577;
+border-radius: 8px;
+text-align: center;
+}
+.labelMbti{
+padding: 10px;
+width: 100px;
+background: #FFBD98;
+border-radius: 0px 8px 8px 0px;
+}
+.titleMbti{
+width: 80px;
+color: #FFBD98;
+text-align: center;
+padding: 10px;
+}
+.wrapMbti{
+width: 100%;
+display: flex;
+flex-direction: column;
+text-align: center;
+border-radius: 8px;
+}
+
+.wrapMbti a{
+font-size: 10px;
+padding: 3px;
+}
+
+.orangefade{
+background-color: #FFBD98;
+color: #6672BF;
+border-radius: 0px 0px 0px 8px;
+}
+.orangefade1{
+background-color: #FFBD98;
+color: #6672BF;
+border-radius: 0px 8px 0px 0px;
+}
+.orange{
+background-color: #FF9000;
+color: white;
+border-radius: 8px 0px 0px 0px;
+}
+.orange1{
+background-color: #FF9000;
+color: white;
+border-radius: 0px 0px 8px 0px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding: 20px ; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
